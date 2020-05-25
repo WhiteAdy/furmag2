@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-shopping-cart"></i> {{ heading_title }}</h3>
+    <h3 class="panel-title"><i class="fal fa-shopping-cart"></i> {{ heading_title }}</h3>
   </div>
   <div class="table-responsive">
     <table class="table">
@@ -23,7 +23,7 @@
           <td>{{ order.status }}</td>
           <td>{{ order.date_added }}</td>
           <td class="text-right">{{ order.total }}</td>
-          <td class="text-right"><a href="{{ order.view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info"><i class="fa fa-eye"></i></a></td>
+          <td class="text-right"><a href="{{ order.view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info"><i class="fal fa-eye"></i></a></td>
         </tr>
         {% endfor %}
         {% else %}

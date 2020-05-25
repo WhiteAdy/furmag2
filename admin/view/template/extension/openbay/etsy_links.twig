@@ -3,7 +3,7 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default" id="btn-cancel"><i class="fa fa-reply"></i></a>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default" id="btn-cancel"><i class="fal fa-reply"></i></a>
       </div>
       <h1>{{ heading_title }}</h1>      <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -15,10 +15,10 @@
   <div class="container-fluid">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-plus fa-lg"></i> {{ text_new_link }}</h3>
+        <h3 class="panel-title"><i class="fal fa-plus fa-lg"></i> {{ text_new_link }}</h3>
       </div>
       <div class="panel-body">
-        <div class="alert alert-success" id="alert-link-save" style="display:none;"><i class="fa fa-check fa-lg" style="color:green"></i> {{ text_link_saved }}</div>
+        <div class="alert alert-success" id="alert-link-save" style="display:none;"><i class="fal fa-check fa-lg" style="color:green"></i> {{ text_link_saved }}</div>
         <div class="alert alert-danger" id="alert-link-error" style="display:none;"></div>
         <div class="well">
       <div class="row">
@@ -34,14 +34,14 @@
             <label class="control-label" for="input-etsy-id">{{ entry_etsy_id }}</label>
             <input type="text" name="add_link_etsy_id" value="" placeholder="{{ entry_etsy_id }}" id="input-etsy-id" class="form-control" />
           </div>
-          <a onclick="addLink();" class="btn btn-primary pull-right" id="button-submit-link"><i class="fa fa-check"></i> {{ button_save }}</a> </div>
+          <a onclick="addLink();" class="btn btn-primary pull-right" id="button-submit-link"><i class="fal fa-check"></i> {{ button_save }}</a> </div>
       </div>
     </div>
       </div>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-link fa-lg"></i> {{ text_current_links }}</h3>
+        <h3 class="panel-title"><i class="fal fa-link fa-lg"></i> {{ text_current_links }}</h3>
       </div>
       <div class="panel-body">
         <div class="table-responsive">
@@ -63,11 +63,11 @@
                   <td class="text-center"><a href="{{ item.link_etsy }}" target="_BLANK">{{ item.etsy_item_id }}</a></td>
                   <td class="text-center">{{ item.quantity }}</td>
                   <td class="text-center">{% if item.status == 1 %}
-                    <i class="fa fa-check" style="color: green;"></i>
+                    <i class="fal fa-check" style="color: green;"></i>
                     {% else %}
-                    <i class="fa fa-times" style="color: red;"></i>
+                    <i class="fal fa-times" style="color: red;"></i>
                     {% endif %}</td>
-                  <td class="text-center"><button class="btn btn-danger" id="row-delete-btn-{{ item.etsy_listing_id }}" onclick="deleteLink('{{ item.etsy_listing_id }}')"><i class="fa fa-times"></i></button></td>
+                  <td class="text-center"><button class="btn btn-danger" id="row-delete-btn-{{ item.etsy_listing_id }}" onclick="deleteLink('{{ item.etsy_listing_id }}')"><i class="fal fa-times"></i></button></td>
                 </tr>
               {% endfor %}
             {% else %}
@@ -109,7 +109,7 @@
       beforeSend: function() {
         $('#alert-link-save').hide();
         $('#alert-link-error').hide().empty();
-        $('#button-submit-link').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
+        $('#button-submit-link').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
       },
       success: function(json) {
         if (json.error == false) {
@@ -118,13 +118,13 @@
           $('#input-etsy-id').val('');
           $('#alert-link-save').show();
         } else {
-          $('#alert-link-error').html('<i class="fa fa-times fa-lg" style="color:red;"></i> '+json.error).show();
+          $('#alert-link-error').html('<i class="fal fa-times fa-lg" style="color:red;"></i> '+json.error).show();
         }
 
-        $('#button-submit-link').empty().html('<i class="fa fa-check"></i> {{ button_save }}').removeAttr('disabled');
+        $('#button-submit-link').empty().html('<i class="fal fa-check"></i> {{ button_save }}').removeAttr('disabled');
       },
       failure: function() {
-        $('#button-submit').empty().html('<i class="fa fa-check"></i> {{ button_save }}').removeAttr('disabled');
+        $('#button-submit').empty().html('<i class="fal fa-check"></i> {{ button_save }}').removeAttr('disabled');
       }
     });
   }
@@ -136,18 +136,18 @@
       method: 'POST',
       data: { 'etsy_link_id' : etsy_link_id },
       beforeSend: function() {
-        $('#row-delete-btn-'+etsy_link_id).empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
+        $('#row-delete-btn-'+etsy_link_id).empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
       },
       success: function(json) {
         if (json.error == false) {
           $('#row-'+etsy_link_id).remove();
         } else {
-          $('#row-delete-btn-'+etsy_link_id).empty().html('<i class="fa fa-times fa-lg" style="color:red;"></i>').removeAttr('disabled');
-          $('#alert-link-error').html('<i class="fa fa-times fa-lg"></i> '+json.error).show();
+          $('#row-delete-btn-'+etsy_link_id).empty().html('<i class="fal fa-times fa-lg" style="color:red;"></i>').removeAttr('disabled');
+          $('#alert-link-error').html('<i class="fal fa-times fa-lg"></i> '+json.error).show();
         }
       },
       failure: function() {
-        $('#row-delete-btn-'+etsy_link_id).empty().html('<i class="fa fa-times fa-lg"></i>').removeAttr('disabled');
+        $('#row-delete-btn-'+etsy_link_id).empty().html('<i class="fal fa-times fa-lg"></i>').removeAttr('disabled');
       }
     });
   }

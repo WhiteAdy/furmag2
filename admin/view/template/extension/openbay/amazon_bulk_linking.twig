@@ -2,7 +2,7 @@
 <div id="content">
   <div class="page-header">
     <div class="container-fluid">
-      <div class="pull-right"> <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a> </div>
+      <div class="pull-right"> <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a> </div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -31,8 +31,8 @@
         <div class="col-sm-12">
           {% if marketplace_code in marketplaces_processing %}
           <div class="pull-right">
-            <a class="btn btn-warning" href="{{ cancel_report_link }}"><i class="fa fa-times fa-lg"></i> {{ button_cancel }}</a>
-            <a class="btn btn-primary" disabled="disabled"><i class="fa fa-cog fa-lg fa-spin"></i> {{ text_loading }}</a>
+            <a class="btn btn-warning" href="{{ cancel_report_link }}"><i class="fal fa-times fa-lg"></i> {{ button_cancel }}</a>
+            <a class="btn btn-primary" disabled="disabled"><i class="fal fa-cog fa-lg fa-spin"></i> {{ text_loading }}</a>
           </div>
           {% else %}
           <div class="pull-right"> <a id="button-load-listings" class="btn btn-primary" href="{{ marketplaces[marketplace_code].href_load_listings }}">{{ button_load }}</a> </div>
@@ -91,7 +91,7 @@
             <div class="well">
               <div class="row">
                 <div class="col-sm-12 text-right">
-                  <div class="pull-right"> <a id="link-button" class="btn btn-primary" data-toggle="tooltip" title="{{ button_link }}"><i class="fa fa-save"></i></a></div>
+                  <div class="pull-right"> <a id="link-button" class="btn btn-primary" data-toggle="tooltip" title="{{ button_link }}"><i class="fal fa-save"></i></a></div>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@ $('#button-load-listings').bind('click', function (e) {
     url: $(this).attr('href'),
     dataType: 'json',
     beforeSend: function () {
-      $('#button-load-listings').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i> {{ text_loading }}').attr('disabled','disabled');
+      $('#button-load-listings').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i> {{ text_loading }}').attr('disabled','disabled');
       $('.alert-danger, .alert-success').remove();
     },
     success: function (json) {
@@ -152,13 +152,13 @@ $('#link-button').click(function (e) {
     type: 'POST',
     data: $('.link-checkbox:checked').parent().siblings('input[type="hidden"]').serialize(),
     beforeSend: function() {
-      $('#link-button').empty().attr('disabled', 'disabled').html('<i class="fa fa-cog fa-lg fa-spin"></i>');
+      $('#link-button').empty().attr('disabled', 'disabled').html('<i class="fal fa-cog fa-lg fa-spin"></i>');
     },
     success: function () {
       document.location.reload(true);
     },
     error: function(xhr, ajaxOptions, thrownError) {
-      $('#link-button').empty().removeAttr('disabled').html('<i class="fa fa-save"></i>');
+      $('#link-button').empty().removeAttr('disabled').html('<i class="fal fa-save"></i>');
       if (xhr.status != 0) { alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText); }
     }
   });

@@ -4,12 +4,12 @@
     <div class="container-fluid">
       <div class="pull-right">
         {% if url_create_new is not empty %}
-          <a href="{{ url_create_new }}" data-toggle="tooltip" title="{{ button_create_new_listing }}" class="btn btn-success"><i class="fa fa-plus-circle"></i></a>
+          <a href="{{ url_create_new }}" data-toggle="tooltip" title="{{ button_create_new_listing }}" class="btn btn-success"><i class="fal fa-plus-circle"></i></a>
         {% endif %}
         {% if url_delete_links is not empty %}
-          <a href="{{ url_delete_links }}" data-toggle="tooltip" title="{{ button_remove_links }}" class="btn btn-danger"><i class="fa fa-times-circle"></i></a>
+          <a href="{{ url_delete_links }}" data-toggle="tooltip" title="{{ button_remove_links }}" class="btn btn-danger"><i class="fal fa-times-circle"></i></a>
         {% endif %}
-        <a href="{{ url_return }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a> </div>
+        <a href="{{ url_return }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a> </div>
       <h1>{{ text_edit_heading }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}

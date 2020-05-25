@@ -2,7 +2,7 @@
 <div id="content">
   <div class="page-header">
     <div class="container-fluid">
-      <div class="pull-right"> <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a> </div>
+      <div class="pull-right"> <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a> </div>
       <h1>{{ text_confirm_title }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -112,14 +112,14 @@
               <td class="text-center" id="notify-{{ order.order_id }}">
                 {% if order.channel == 'Amazon EU' or order.channel == 'Amazon US' %}
                   <input type="hidden" name="notify" id="order-notify-{{ order.order_id }}" value="0" />
-                  <i class="fa fa-times-circle-o" data-toggle="tooltip" title="{{ text_link_policy }}"></i>
+                  <i class="fal fa-times-circle-o" data-toggle="tooltip" title="{{ text_link_policy }}"></i>
                 {% else %}
                   <input class="notify-checkbox" type="checkbox" name="notify" id="order-notify-{{ order.order_id }}" value="1" />
                 {% endif %}
               </td>
               <td class="text-center">
-                <a href="{{ order.view_order_link }}" data-toggle="tooltip" title="{{ text_view_order }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>
-                <button class="btn btn-danger button-remove-order" onclick="removeOrderFromUpdate({{ order.order_id }}); return false;" data-toggle="tooltip" title="{{ button_remove_order }}"><i class="fa fa-trash-o"></i></button>
+                <a href="{{ order.view_order_link }}" data-toggle="tooltip" title="{{ text_view_order }}" class="btn btn-info" target="_blank"><i class="fal fa-eye"></i></a>
+                <button class="btn btn-danger button-remove-order" onclick="removeOrderFromUpdate({{ order.order_id }}); return false;" data-toggle="tooltip" title="{{ button_remove_order }}"><i class="fal fa-trash-o"></i></button>
               </td>
             </tr>
           {% endfor %}

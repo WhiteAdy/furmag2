@@ -3,8 +3,8 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <button type="button" data-toggle="tooltip" title="{{ button_filter }}" onclick="$('#filter-upload').toggleClass('hidden-sm hidden-xs');" class="btn btn-default hidden-md hidden-lg"><i class="fa fa-filter"></i></button>
-        <button type="button" data-toggle="tooltip" title="{{ button_delete }}" class="btn btn-danger" onclick="confirm('{{ text_confirm }}') ? $('#form-upload').submit() : false;"><i class="fa fa-trash-o"></i></button>
+        <button type="button" data-toggle="tooltip" title="{{ button_filter }}" onclick="$('#filter-upload').toggleClass('hidden-sm hidden-xs');" class="btn btn-default hidden-md hidden-lg"><i class="fal fa-filter"></i></button>
+        <button type="button" data-toggle="tooltip" title="{{ button_delete }}" class="btn btn-danger" onclick="confirm('{{ text_confirm }}') ? $('#form-upload').submit() : false;"><i class="fal fa-trash-o"></i></button>
       </div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
@@ -15,12 +15,12 @@
     </div>
   </div>
   <div class="container-fluid">{% if error_warning %}
-    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+    <div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> {{ error_warning }}
       <button type="button" class="close" data-dismiss="alert">&times;</button>
     </div>
     {% endif %}
     {% if success %}
-    <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
+    <div class="alert alert-success alert-dismissible"><i class="fal fa-check-circle"></i> {{ success }}
       <button type="button" class="close" data-dismiss="alert">&times;</button>
     </div>
     {% endif %}
@@ -28,7 +28,7 @@
       <div id="filter-upload" class="col-md-3 col-md-push-9 col-sm-12 hidden-sm hidden-xs">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-filter"></i> {{ text_filter }}</h3>
+            <h3 class="panel-title"><i class="fal fa-filter"></i> {{ text_filter }}</h3>
           </div>
           <div class="panel-body">
             <div class="form-group">
@@ -40,11 +40,11 @@
               <div class="input-group date">
                 <input type="text" name="filter_date_added" value="{{ filter_date_added }}" placeholder="{{ entry_date_added }}" data-date-format="YYYY-MM-DD" id="input-date-added" class="form-control" />
                 <span class="input-group-btn">
-                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn btn-default"><i class="fal fa-calendar"></i></button>
                 </span></div>
             </div>
             <div class="form-group text-right">
-              <button type="button" id="button-filter" class="btn btn-default"><i class="fa fa-filter"></i> {{ button_filter }}</button>
+              <button type="button" id="button-filter" class="btn btn-default"><i class="fal fa-filter"></i> {{ button_filter }}</button>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
       <div class="col-md-9 col-md-pull-3 col-sm-12">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-list"></i> {{ text_list }}</h3>
+            <h3 class="panel-title"><i class="fal fa-list"></i> {{ text_list }}</h3>
           </div>
           <div class="panel-body">
             <form action="{{ delete }}" method="post" enctype="multipart/form-data" id="form-upload">
@@ -80,7 +80,7 @@
                     <td class="text-left">{{ upload.name }}</td>
                     <td class="text-left">{{ upload.filename }}</td>
                     <td class="text-right">{{ upload.date_added }}</td>
-                    <td class="text-right"><a href="{{ upload.download }}" data-toggle="tooltip" title="{{ button_download }}" class="btn btn-info"><i class="fa fa-download"></i></a></td>
+                    <td class="text-right"><a href="{{ upload.download }}" data-toggle="tooltip" title="{{ button_download }}" class="btn btn-info"><i class="fal fa-download"></i></a></td>
                   </tr>
                   {% endfor %}
                   {% else %}

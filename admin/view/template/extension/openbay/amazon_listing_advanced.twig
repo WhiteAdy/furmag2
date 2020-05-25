@@ -4,9 +4,9 @@
     <div class="container-fluid">
       <div class="pull-right">
         {% if has_listing_errors %}
-        <a href="{{ url_remove_errors }}" data-toggle="tooltip" title="{{ button_remove_error }}" class="btn btn-danger"><i class="fa fa-reply"></i></a>
+        <a href="{{ url_remove_errors }}" data-toggle="tooltip" title="{{ button_remove_error }}" class="btn btn-danger"><i class="fal fa-reply"></i></a>
         {% endif %}
-        <a href="{{ cancel_url }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a> </div>
+        <a href="{{ cancel_url }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a> </div>
       <h1>{{ text_title_advanced }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -20,13 +20,13 @@
     <div class="alert alert-danger alert-dismissible">
       <ul>
         {% for listing_error in errors %}
-        <li><i class="fa fa-exclamation-circle"></i> {{ listing_error.message }}</li>
+        <li><i class="fal fa-exclamation-circle"></i> {{ listing_error.message }}</li>
         {% endfor %}
       </ul>
     </div>
     {% endif %}
     {% if success %}
-    <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}</div>
+    <div class="alert alert-success alert-dismissible"><i class="fal fa-check-circle"></i> {{ success }}</div>
     {% endif %}
     <ul class="nav nav-tabs" id="tabs">
       <li class="active"><a href="#page-main" data-toggle="tab">{{ tab_main }}</a></li>
@@ -102,7 +102,7 @@
     </form>
     <div class="well">
       <div class="row">
-        <div class="col-md-12 text-right"> <a class="btn btn-primary" data-toggle="tooltip" title="{{ button_save }}" onclick="validate_and_save('advanced')"><i class="fa fa-save fa-lg"></i></a> <a class="btn btn-primary" data-toggle="tooltip" title="{{ button_save_upload }}" onclick="save_and_upload()"><i class="fa fa-cloud-upload fa-lg"></i></a> <a class="btn btn-primary" data-toggle="tooltip" title="{{ button_saved_listings }}" href="{{ saved_listings_url }}"><i class="fa fa-copy fa-lg"></i></a> </div>
+        <div class="col-md-12 text-right"> <a class="btn btn-primary" data-toggle="tooltip" title="{{ button_save }}" onclick="validate_and_save('advanced')"><i class="fal fa-save fa-lg"></i></a> <a class="btn btn-primary" data-toggle="tooltip" title="{{ button_save_upload }}" onclick="save_and_upload()"><i class="fal fa-cloud-upload fa-lg"></i></a> <a class="btn btn-primary" data-toggle="tooltip" title="{{ button_saved_listings }}" href="{{ saved_listings_url }}"><i class="fal fa-copy fa-lg"></i></a> </div>
       </div>
     </div>
   </div>
@@ -195,7 +195,7 @@ function show_form(xml, formType) {
         dataType: 'json',
         beforeSend: function() {
             $('#category_selector').attr('disabled', 'disabled');
-            $('#category_selector_label').after('<a class="btn btn-primary wait" disabled="disabled"><i class="fa fa-cog fa-lg fa-spin"></i> </a>');
+            $('#category_selector_label').after('<a class="btn btn-primary wait" disabled="disabled"><i class="fal fa-cog fa-lg fa-spin"></i> </a>');
         },
         complete: function() {
             $('#category_selector').removeAttr('disabled');
@@ -330,7 +330,7 @@ function getImageField(fieldData) {
     if (fieldData['thumb'] != "") {
       output += '<img src="'+fieldData['thumb']+'" alt="" title="" />';
     } else {
-      output += '<i class="fa fa-camera fa-5x"></i>';
+      output += '<i class="fal fa-camera fa-5x"></i>';
     }
   output += "</a>";
   output += '<input type="hidden" id="input-image-'+fieldData['name']+'" name="fields[' + fieldData['name'] + ']" value="' + fieldData['value'] + '" accepted="' + fieldData['accepted']['type'] + '" field_name="' + fieldData['name'] + '" field_type="' + fieldData['type'] + '">';
@@ -385,7 +385,7 @@ function getBrowseNodeField(fieldData) {
   output += 'class="form-control" ';
   output += 'onclick="loadBrowseNode(\''+fieldData['name']+'\');" ';
   output += 'value="' + fieldData['value'] + '">';
-  output += '<span class="input-group-addon"><i class="fa fa-sitemap fa-lg"></i></span>';
+  output += '<span class="input-group-addon"><i class="fal fa-sitemap fa-lg"></i></span>';
   output += '</div>';
   output += '<span class="label label-info" style="display:none;" id="'+fieldData['name']+'_label"></span>';
 
@@ -668,7 +668,7 @@ function nodeSelect(field, original_field) {
         data: { marketplaceId: market, node: node},
         dataType: 'json',
         beforeSend: function(){
-          $('#browse-node-content').empty().html('<a class="btn btn-primary" disabled="disabled"><i class="fa fa-cog fa-lg fa-spin"></i> </a>');
+          $('#browse-node-content').empty().html('<a class="btn btn-primary" disabled="disabled"><i class="fal fa-cog fa-lg fa-spin"></i> </a>');
         },
         success: function(data) {
           if (data.node.error != true){
@@ -691,7 +691,7 @@ function nodeSelect(field, original_field) {
             }else{
               html += '<div class="row">';
                 html += '<div class="col-sm-12 text-right">';
-                  html += '<a onclick="saveNode('+data.node.id+', \''+original_field+'\', \''+nodeStringSimple+'\')" class="btn btn-primary"><i class="fa fa-save fa-lg"></i> {{ button_save }}</a>';
+                  html += '<a onclick="saveNode('+data.node.id+', \''+original_field+'\', \''+nodeStringSimple+'\')" class="btn btn-primary"><i class="fal fa-save fa-lg"></i> {{ button_save }}</a>';
                 html += '</div>';
               html += '</div>';
             }

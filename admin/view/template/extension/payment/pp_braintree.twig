@@ -3,8 +3,8 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <button type="submit" form="form-braintree" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
-        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+        <button type="submit" form="form-braintree" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fal fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a></div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -15,18 +15,18 @@
   </div>
   <div class="container-fluid">
     {% if error_warning %}
-      <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> {{ error_warning }}
         <button type="button" class="close" data-dismiss="alert">&times;</button>
       </div>
     {% endif %}
     {% if success %}
-      <div class="alert alert-success alert-dismissible"><i class="fa fa-check"></i> {{ success }}
+      <div class="alert alert-success alert-dismissible"><i class="fal fa-check"></i> {{ success }}
         <button type="button" class="close" data-dismiss="alert">&times;</button>
       </div>
     {% endif %}
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+        <h3 class="panel-title"><i class="fal fa-pencil"></i> {{ text_edit }}</h3>
       </div>
       <div class="panel-body">
         <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-braintree" class="form-horizontal">
@@ -53,7 +53,7 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label">{{ entry_connection }}</label>
                   <div class="col-sm-10">
-                    <div class="alert alert-info"><i class="fa fa-check"></i> {{ text_app_connected }} ({{ text_merchant_connected }}{{ payment_pp_braintree_merchant_id }}) <div class="btn btn-sm btn-danger pull-right" id="delete-link">{{ text_unlink }}</div></div>
+                    <div class="alert alert-info"><i class="fal fa-check"></i> {{ text_app_connected }} ({{ text_merchant_connected }}{{ payment_pp_braintree_merchant_id }}) <div class="btn btn-sm btn-danger pull-right" id="delete-link">{{ text_unlink }}</div></div>
                   </div>
                 </div>
               {% else %}
@@ -735,7 +735,7 @@
                       <div class="input-group date">
                         <input type="text" name="filter_date_from" value="" placeholder="From" data-date-format="YYYY-MM-DD" id="input-date-from" class="form-control" />
                         <span class="input-group-btn">
-                          <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+                          <button class="btn btn-default" type="button"><i class="fal fa-calendar"></i></button>
                         </span>
                       </div>
                     </div>
@@ -744,7 +744,7 @@
                       <div class="input-group date">
                         <input type="text" name="filter_date_to" value="" placeholder="To" data-date-format="YYYY-MM-DD" id="input-date-to" class="form-control" />
                         <span class="input-group-btn">
-                          <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+                          <button class="btn btn-default" type="button"><i class="fal fa-calendar"></i></button>
                         </span>
                       </div>
                     </div>
@@ -805,7 +805,7 @@
                       {% endfor %}
                     </select>
                     </div>
-                    <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa fa-search"></i> {{ button_filter }}</button>
+                    <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fal fa-search"></i> {{ button_filter }}</button>
                   </div>
                   </div>
                 </div>
@@ -904,7 +904,7 @@ $('#button-filter').on('click', function(event) {
 		beforeSend: function() {
 			$('#button-filter').button('loading');
 
-			$('#table-action').html('<div style="width: 5em; margin: 0px auto;"><i class="braintree-loading fa fa-spinner fa-spin fa-5x" style="text-align: center; margin: 0 auto; width: 100%; font-size: 5em;"></i></div>');
+			$('#table-action').html('<div style="width: 5em; margin: 0px auto;"><i class="braintree-loading fal fa-spinner fa-spin fa-5x" style="text-align: center; margin: 0 auto; width: 100%; font-size: 5em;"></i></div>');
 		},
 		complete: function() {
 			$('#button-filter').button('reset');
@@ -1003,7 +1003,7 @@ function getTransaction(transaction_id) {
 		beforeSend: function() {
 			$('#button-filter').button('loading');
 
-			$('#table-action').html('<div style="width: 5em; margin: 0px auto;"><i class="braintree-loading fa fa-spinner fa-spin fa-5x" style="text-align: center; margin: 0 auto; width: 100%; font-size: 5em;"></i></div>');
+			$('#table-action').html('<div style="width: 5em; margin: 0px auto;"><i class="braintree-loading fal fa-spinner fa-spin fa-5x" style="text-align: center; margin: 0 auto; width: 100%; font-size: 5em;"></i></div>');
 		},
 		complete: function() {
 			$('#button-filter').button('reset');

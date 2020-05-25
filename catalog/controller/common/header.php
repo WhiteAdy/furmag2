@@ -24,6 +24,8 @@ class ControllerCommonHeader extends Controller {
 			$this->document->addLink($server . 'image/' . $this->config->get('config_icon'), 'icon');
 		}
 
+		$this->document->addScript('catalog/view/theme/furmag2/javascript/furmag2.js');
+
 		$data['title'] = $this->document->getTitle();
 
 		$data['base'] = $server;
@@ -49,12 +51,16 @@ class ControllerCommonHeader extends Controller {
 		if ($this->customer->isLogged()) {
 			$this->load->model('account/wishlist');
 
-			$data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), $this->model_account_wishlist->getTotalWishlist());
+			$data['text_wishlist'] = $this->language->get('text_wishlist');
+			$data['wishlist_count'] = $this->model_account_wishlist->getTotalWishlist();
 		} else {
-			$data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), (isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0));
+			$data['text_wishlist'] = $this->language->get('text_wishlist');
+			$data['wishlist_count'] = isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0;
+
 		}
 
 		$data['text_logged'] = sprintf($this->language->get('text_logged'), $this->url->link('account/account', '', true), $this->customer->getFirstName(), $this->url->link('account/logout', '', true));
+		$data['text_login_now'] = $this->language->get('text_login_now');
 		
 		$data['home'] = $this->url->link('common/home');
 		$data['wishlist'] = $this->url->link('account/wishlist', '', true);

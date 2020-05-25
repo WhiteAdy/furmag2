@@ -12,16 +12,16 @@
   </div>
   <div class="container-fluid">
     {% if error_warning %}
-      <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}</div>
+      <div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> {{ error_warning }}</div>
     {% endif %}
     {% if success %}
-      <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}</div>
+      <div class="alert alert-success alert-dismissible"><i class="fal fa-check-circle"></i> {{ success }}</div>
     {% endif %}
   </div>
   <div class="container-fluid">
     <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title"><i class="fa fa-list"></i> {{ text_list }}</h3>
+      <h3 class="panel-title"><i class="fal fa-list"></i> {{ text_list }}</h3>
     </div>
     <div class="panel-body">
       <div class="well">
@@ -38,7 +38,7 @@
                       <option value="{{ key }}">{{ val.name }}</option>
                     {% endfor %}
                   </select>
-                  <a data-toggle="tooltip" title="{{ button_add }}" class="btn btn-primary input-group-addon" onclick="$('#add-profile-form').submit();"><i class="fa fa-plus-circle"></i> {{ button_add }}</a>
+                  <a data-toggle="tooltip" title="{{ button_add }}" class="btn btn-primary input-group-addon" onclick="$('#add-profile-form').submit();"><i class="fal fa-plus-circle"></i> {{ button_add }}</a>
                 </div>
               </div>
             </form>
@@ -62,8 +62,8 @@
           <td class="text-left">{{ types[profile.type].name }}</td>
           <td class="text-left">{{ profile.description }}</td>
           <td class="text-right">
-            <a href="{{ profile.link_edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a>&nbsp;
-            <a href="{{ profile.link_delete }}" data-toggle="tooltip" title="{{ button_delete }}" class="btn btn-danger profile-delete"><i class="fa fa-minus-circle"></i></a>
+            <a href="{{ profile.link_edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fal fa-pencil"></i></a>&nbsp;
+            <a href="{{ profile.link_delete }}" data-toggle="tooltip" title="{{ button_delete }}" class="btn btn-danger profile-delete"><i class="fal fa-minus-circle"></i></a>
           </td>
         </tr>
         {% endfor %}

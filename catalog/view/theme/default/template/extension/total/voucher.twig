@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4 class="panel-title"><a href="#collapse-voucher" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">{{ heading_title }} <i class="fa fa-caret-down"></i></a></h4>
+    <h4 class="panel-title"><a href="#collapse-voucher" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">{{ heading_title }} <i class="fal fa-caret-down"></i></a></h4>
   </div>
   <div id="collapse-voucher" class="panel-collapse collapse">
     <div class="panel-body">
@@ -27,7 +27,7 @@ $('#button-voucher').on('click', function() {
 			$('.alert-dismissible').remove();
 			
 			if (json['error']) {
-				$('.breadcrumb').after('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+				$('.breadcrumb').after('<div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> ' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 				
 				$('html, body').animate({ scrollTop: 0 }, 'slow');
 			}

@@ -3,8 +3,8 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <button type="submit" form="form-coupon" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
-        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+        <button type="submit" form="form-coupon" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fal fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a></div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -14,13 +14,13 @@
     </div>
   </div>
   <div class="container-fluid"> {% if error_warning %}
-    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+    <div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> {{ error_warning }}
       <button type="button" class="close" data-dismiss="alert">&times;</button>
     </div>
     {% endif %}
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_form }}</h3>
+        <h3 class="panel-title"><i class="fal fa-pencil"></i> {{ text_form }}</h3>
       </div>
       <div class="panel-body">
         <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-coupon" class="form-horizontal">
@@ -130,7 +130,7 @@
                 <div class="col-sm-10">
                   <input type="text" name="product" value="" placeholder="{{ entry_product }}" id="input-product" class="form-control" />
                   <div id="coupon-product" class="well well-sm" style="height: 150px; overflow: auto;"> {% for coupon_product in coupon_product %}
-                    <div id="coupon-product{{ coupon_product.product_id }}"><i class="fa fa-minus-circle"></i> {{ coupon_product.name }}
+                    <div id="coupon-product{{ coupon_product.product_id }}"><i class="fal fa-minus-circle"></i> {{ coupon_product.name }}
                       <input type="hidden" name="coupon_product[]" value="{{ coupon_product.product_id }}" />
                     </div>
                     {% endfor %} </div>
@@ -141,7 +141,7 @@
                 <div class="col-sm-10">
                   <input type="text" name="category" value="" placeholder="{{ entry_category }}" id="input-category" class="form-control" />
                   <div id="coupon-category" class="well well-sm" style="height: 150px; overflow: auto;"> {% for coupon_category in coupon_category %}
-                    <div id="coupon-category{{ coupon_category.category_id }}"><i class="fa fa-minus-circle"></i> {{ coupon_category.name }}
+                    <div id="coupon-category{{ coupon_category.category_id }}"><i class="fal fa-minus-circle"></i> {{ coupon_category.name }}
                       <input type="hidden" name="coupon_category[]" value="{{ coupon_category.category_id }}" />
                     </div>
                     {% endfor %} </div>
@@ -153,7 +153,7 @@
                   <div class="input-group date">
                     <input type="text" name="date_start" value="{{ date_start }}" placeholder="{{ entry_date_start }}" data-date-format="YYYY-MM-DD" id="input-date-start" class="form-control" />
                     <span class="input-group-btn">
-                    <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                    <button type="button" class="btn btn-default"><i class="fal fa-calendar"></i></button>
                     </span></div>
                 </div>
               </div>
@@ -163,7 +163,7 @@
                   <div class="input-group date">
                     <input type="text" name="date_end" value="{{ date_end }}" placeholder="{{ entry_date_end }}" data-date-format="YYYY-MM-DD" id="input-date-end" class="form-control" />
                     <span class="input-group-btn">
-                    <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                    <button type="button" class="btn btn-default"><i class="fal fa-calendar"></i></button>
                     </span></div>
                 </div>
               </div>
@@ -233,7 +233,7 @@ $('input[name=\'product\']').autocomplete({
 		
 		$('#coupon-product' + item['value']).remove();
 		
-		$('#coupon-product').append('<div id="coupon-product' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="coupon_product[]" value="' + item['value'] + '" /></div>');	
+		$('#coupon-product').append('<div id="coupon-product' + item['value'] + '"><i class="fal fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="coupon_product[]" value="' + item['value'] + '" /></div>');	
 	}
 });
 
@@ -262,7 +262,7 @@ $('input[name=\'category\']').autocomplete({
 		
 		$('#coupon-category' + item['value']).remove();
 		
-		$('#coupon-category').append('<div id="coupon-category' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="coupon_category[]" value="' + item['value'] + '" /></div>');
+		$('#coupon-category').append('<div id="coupon-category' + item['value'] + '"><i class="fal fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="coupon_category[]" value="' + item['value'] + '" /></div>');
 	}	
 });
 

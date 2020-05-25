@@ -3,15 +3,15 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a>
         {% if fba_order_status == 1 %}
-          <a href="{{ resend_link }}" id="button-resend" data-toggle="tooltip" title="{{ button_resend }}" class="btn btn-info" value=""><i class="fa fa-refresh"></i></a>
+          <a href="{{ resend_link }}" id="button-resend" data-toggle="tooltip" title="{{ button_resend }}" class="btn btn-info" value=""><i class="fal fa-refresh"></i></a>
         {% endif %}
         {% if fba_order_status == 2 %}
-          <a href="{{ ship_link }}" id="button-ship" data-toggle="tooltip" title="{{ button_ship }}" class="btn btn-info" value=""><i class="fa fa-truck"></i></a>
+          <a href="{{ ship_link }}" id="button-ship" data-toggle="tooltip" title="{{ button_ship }}" class="btn btn-info" value=""><i class="fal fa-truck"></i></a>
         {% endif %}
         {% if fba_order_status == 0 or fba_order_status == 2 %}
-          <a onclick="confirm('{{ text_confirm }}') ? location.href='{{ cancel_link }}' : false;" id="button-cancel" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-danger" value=""><i class="fa fa-times-circle"></i></a>
+          <a onclick="confirm('{{ text_confirm }}') ? location.href='{{ cancel_link }}' : false;" id="button-cancel" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-danger" value=""><i class="fal fa-times-circle"></i></a>
         {% endif %}
       </div>
       <h1>{{ heading_title }}</h1>
@@ -24,13 +24,13 @@
   </div>
   <div class="container-fluid" id="main-body">{% if error_warning %}
     {% for warning in error_warning %}
-    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ warning }}
+    <div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> {{ warning }}
       <button type="button" class="close" data-dismiss="alert">&times;</button>
     </div>
     {% endfor %}
     {% endif %}
     {% if success %}
-    <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
+    <div class="alert alert-success alert-dismissible"><i class="fal fa-check-circle"></i> {{ success }}
       <button type="button" class="close" data-dismiss="alert">&times;</button>
     </div>
     {% endif %}
@@ -45,7 +45,7 @@
             <div class="col-md-6">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa fa-shopping-cart"></i> {{ text_shipping_address }}</h3>
+                  <h3 class="panel-title"><i class="fal fa-shopping-cart"></i> {{ text_shipping_address }}</h3>
                 </div>
                 <table class="table">
                   <tbody>
@@ -59,15 +59,15 @@
             <div class="col-md-6">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa fa-user"></i> {{ text_order_info }}</h3>
+                  <h3 class="panel-title"><i class="fal fa-user"></i> {{ text_order_info }}</h3>
                 </div>
                 <table class="table">
                   <tr>
-                    <td><button data-toggle="tooltip" title="{{ text_opencart_order }}" class="btn btn-info btn-xs"><i class="fa fa-shopping-cart fa-fw"></i></button></td>
+                    <td><button data-toggle="tooltip" title="{{ text_opencart_order }}" class="btn btn-info btn-xs"><i class="fal fa-shopping-cart fa-fw"></i></button></td>
                     <td><a href="{{ order_link }}">{{ order_id }}</a></td>
                   </tr>
                   <tr>
-                    <td style="width: 1%;"><button data-toggle="tooltip" title="{{ text_status }}" class="btn btn-info btn-xs"><i class="fa fa-cog fa-fw"></i></button></td>
+                    <td style="width: 1%;"><button data-toggle="tooltip" title="{{ text_status }}" class="btn btn-info btn-xs"><i class="fal fa-cog fa-fw"></i></button></td>
                     <td>
                       {% if fba_order_status == 0 %}
                         <label class="label label-info">{{ status_options.fba_order_status }}</label>
@@ -84,7 +84,7 @@
                   </tr>
                   {% if fulfillment_id %}
                     <tr>
-                      <td style="width: 1%;"><button data-toggle="tooltip" title="{{ text_fulfillment_id }}" class="btn btn-info btn-xs"><i class="fa fa-truck fa-fw"></i></button></td>
+                      <td style="width: 1%;"><button data-toggle="tooltip" title="{{ text_fulfillment_id }}" class="btn btn-info btn-xs"><i class="fal fa-truck fa-fw"></i></button></td>
                       <td><a href="{{ fulfillment_link }}">{{ fulfillment_id }}</a></td>
                     </tr>
                   {% endif %}
@@ -94,7 +94,7 @@
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title"><i class="fa fa-info-circle"></i> {{ text_order }}</h3>
+              <h3 class="panel-title"><i class="fal fa-info-circle"></i> {{ text_order }}</h3>
             </div>
             <div class="panel-body">
               <table class="table table-bordered">
@@ -121,7 +121,7 @@
                     {% endif %}
                   </td>
                   <td class="text-right">{{ product.quantity }}</td>
-                  <td class="text-right"> {% if product.fba == 1 %} <span class="btn btn-success btn-sm"><i class="fa fa-check fa-fw"></i></span> {% else %} <span class="btn btn-danger btn-sm"><i class="fa fa-minus fa-fw"></i></span> {% endif %} </td>
+                  <td class="text-right"> {% if product.fba == 1 %} <span class="btn btn-success btn-sm"><i class="fal fa-check fa-fw"></i></span> {% else %} <span class="btn btn-danger btn-sm"><i class="fal fa-minus fa-fw"></i></span> {% endif %} </td>
                 </tr>
                 {% endfor %}
                 </tbody>
@@ -132,7 +132,7 @@
         <div class="tab-pane" id="tab-history">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title"><i class="fa fa-comment-o"></i> {{ text_history }}</h3>
+              <h3 class="panel-title"><i class="fal fa-comment-o"></i> {{ text_history }}</h3>
             </div>
             <div class="panel-body">
               <table class="table table-bordered">
@@ -155,13 +155,13 @@
                         <td class="text-right"><label class="label{% if fulfillment.response_header_code == 200 or fulfillment.response_header_code == 201 %}label-success{% else %}label-danger{% endif %}">{{ fulfillment.response_header_code }}</label></td>
                         <td class="text-right">
                           {% if fulfillment.request_body is not empty %}
-                            <button data-toggle="tooltip" title="{{ text_show_request }}" class="btn btn-info btn-sm" onclick="$('#request-row-{{ fulfillment.fba_order_fulfillment_id }}').toggle();"><i class="fa fa-mail-forward fa-fw"></i></button>
+                            <button data-toggle="tooltip" title="{{ text_show_request }}" class="btn btn-info btn-sm" onclick="$('#request-row-{{ fulfillment.fba_order_fulfillment_id }}').toggle();"><i class="fal fa-mail-forward fa-fw"></i></button>
                           {% endif %}
                           {% if fulfillment.response_body is not empty %}
-                            <button data-toggle="tooltip" title="{{ text_show_response }}" class="btn btn-info btn-sm" onclick="$('#response-row-{{ fulfillment.fba_order_fulfillment_id }}').toggle();"><i class="fa fa-mail-reply fa-fw"></i></button>
+                            <button data-toggle="tooltip" title="{{ text_show_response }}" class="btn btn-info btn-sm" onclick="$('#response-row-{{ fulfillment.fba_order_fulfillment_id }}').toggle();"><i class="fal fa-mail-reply fa-fw"></i></button>
                           {% endif %}
                           {% if fulfillment.errors is not empty %}
-                            <button data-toggle="tooltip" title="{{ text_show_errors }}" class="btn btn-danger btn-sm" onclick="$('#error-row-{{ fulfillment.fba_order_fulfillment_id }}').toggle();"><i class="fa fa-exclamation fa-fw"></i></button>
+                            <button data-toggle="tooltip" title="{{ text_show_errors }}" class="btn btn-danger btn-sm" onclick="$('#error-row-{{ fulfillment.fba_order_fulfillment_id }}').toggle();"><i class="fal fa-exclamation fa-fw"></i></button>
                           {% endif %}
                         </td>
                       </tr>
@@ -199,15 +199,15 @@
 <script type="text/javascript"><!--
 
 $('#button-resend').click(function() {
-  $('#button-resend').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
+  $('#button-resend').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
 });
 
 $('#button-ship').click(function() {
-  $('#button-ship').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
+  $('#button-ship').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
 });
 
 $('#button-cancel').click(function() {
-  $('#button-cancel').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
+  $('#button-cancel').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
 });
 
 //--></script>

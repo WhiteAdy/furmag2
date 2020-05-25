@@ -3,7 +3,7 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default" id="btn-cancel"><i class="fa fa-reply"></i></a>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default" id="btn-cancel"><i class="fal fa-reply"></i></a>
       </div>
       <h1>{{ heading_title }}</h1>      <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -15,12 +15,12 @@
   <div class="container-fluid">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+        <h3 class="panel-title"><i class="fal fa-pencil"></i> {{ text_edit }}</h3>
       </div>
       <div class="panel-body">
         <div id="page-listing">
           {% if error_warning %}
-          <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}</div>
+          <div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> {{ error_warning }}</div>
           {% endif %}
           <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form" class="form-horizontal">
             <input type="hidden" name="etsy_item_id" value="{{ etsy_item_id }}" />
@@ -62,7 +62,7 @@
               <div class="well">
                 <div class="row">
                   <div class="col-sm-12 text-right">
-                    <a data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary" id="button-save"><i class="fa fa-save"></i></a>
+                    <a data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary" id="button-save"><i class="fal fa-save"></i></a>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@
     $.ajax({
       url: 'index.php?route=extension/openbay/etsy_product/editsubmit&user_token={{ user_token }}',
       beforeSend: function(){
-        $('#button-submit').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
+        $('#button-submit').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
       },
       type: 'post',
       data: $("#form").serialize(),

@@ -12,7 +12,7 @@
             <a id="transaction_refund" data-url-transaction-refund="{{ url_refund }}" data-confirm-refund="{{ confirm_refund }}" data-insert-amount="{{ insert_amount }}" class="btn btn-danger">{{ button_refund }}</a>
         {% endif %}
         
-        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a></div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -24,14 +24,14 @@
   <div class="container-fluid">
     <div id="transaction-alert" data-message="{{ text_loading }}">
         {% for alert in alerts %}
-            <div class="alert alert-{{ alert.type }}"><i class="fa fa-{{ alert.icon }}"></i>&nbsp;{{ alert.text }}
+            <div class="alert alert-{{ alert.type }}"><i class="fal fa-{{ alert.icon }}"></i>&nbsp;{{ alert.text }}
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
             </div>
         {% endfor %}
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-info-circle"></i>&nbsp;{{ text_edit }}</h3>
+        <h3 class="panel-title"><i class="fal fa-info-circle"></i>&nbsp;{{ text_edit }}</h3>
       </div>
       <div class="panel-body">
         <form class="form-horizontal">
@@ -194,7 +194,7 @@ $(document).ready(function() {
     var transactionLoading = function() {
         var message = $('#transaction-alert').attr('data-message');
 
-        $('#transaction-alert').html('<div class="text-center alert alert-info"><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;' + message + '</div>');
+        $('#transaction-alert').html('<div class="text-center alert alert-info"><i class="fal fa-circle-o-notch fa-spin"></i>&nbsp;' + message + '</div>');
     }
 
     var refreshPage = function() {
@@ -202,7 +202,7 @@ $(document).ready(function() {
     }
 
     var transactionError = function(message) {
-        $('#transaction-alert').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="X"><span aria-hidden="true">&times;</span></button><i class="fa fa-exclamation-circle"></i>&nbsp;' + message + '</div>');
+        $('#transaction-alert').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="X"><span aria-hidden="true">&times;</span></button><i class="fal fa-exclamation-circle"></i>&nbsp;' + message + '</div>');
     }
 
     var addOrderHistory = function(data, success_callback) {

@@ -4,8 +4,8 @@
     <div class="page-header">
         <div class="container-fluid">
             <div class="pull-right">
-                <button type="submit" form="form-square-checkout" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
-                <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+                <button type="submit" form="form-square-checkout" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fal fa-save"></i></button>
+                <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a></div>
             <h1>{{ heading_title }}</h1>
             <ul class="breadcrumb">
                 {% for breadcrumb in breadcrumbs %}
@@ -16,23 +16,23 @@
     </div>
     <div class="container-fluid">
         {% for alert in alerts %}
-            <div class="alert alert-{{ alert.type }}"><i class="fa fa-{{ alert.icon }}"></i>&nbsp;{{ alert.text }}
+            <div class="alert alert-{{ alert.type }}"><i class="fal fa-{{ alert.icon }}"></i>&nbsp;{{ alert.text }}
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
             </div>
         {% endfor %}
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-pencil"></i>&nbsp;{{ text_edit_heading }}</h3>
+                <h3 class="panel-title"><i class="fal fa-pencil"></i>&nbsp;{{ text_edit_heading }}</h3>
             </div>
             <div class="panel-body">
                 <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-square-checkout" class="form-horizontal">
                     <input type="hidden" name="payment_squareup_card" value="1" />
                     <ul class="nav nav-tabs">
-                        <li><a href="#tab-setting" data-toggle="tab"><i class="fa fa-gear"></i>&nbsp;{{ tab_setting }}</a></li>
-                        <li><a href="#tab-transaction" data-toggle="tab"><i class="fa fa-list"></i>&nbsp;{{ tab_transaction }}</a></li>
-                        <li><a href="#tab-cron" data-toggle="tab"><i class="fa fa-clock-o"></i>&nbsp;{{ tab_cron }}</a></li>
-                        <li><a href="#tab-recurring" data-toggle="tab"><i class="fa fa-hourglass-half"></i>&nbsp;{{ tab_recurring }}</a></li>
+                        <li><a href="#tab-setting" data-toggle="tab"><i class="fal fa-gear"></i>&nbsp;{{ tab_setting }}</a></li>
+                        <li><a href="#tab-transaction" data-toggle="tab"><i class="fal fa-list"></i>&nbsp;{{ tab_transaction }}</a></li>
+                        <li><a href="#tab-cron" data-toggle="tab"><i class="fal fa-clock-o"></i>&nbsp;{{ tab_cron }}</a></li>
+                        <li><a href="#tab-recurring" data-toggle="tab"><i class="fal fa-hourglass-half"></i>&nbsp;{{ tab_recurring }}</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane" id="tab-setting">
@@ -307,7 +307,7 @@
                         <div class="tab-pane" id="tab-cron">
                             <fieldset>
                                 <legend>{{ text_executables }}</legend>
-                                <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ text_recurring_info }}</div>
+                                <div class="alert alert-info"><i class="fal fa-info-circle"></i> {{ text_recurring_info }}</div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label"><span data-toggle="tooltip" data-original-title="{{ help_local_cron }}">{{ text_local_cron }}</span></label>
                                     <div class="col-sm-10">
@@ -320,7 +320,7 @@
                                         <div class="input-group">
                                             <input disabled type="text" name="payment_squareup_cron_url" id="input_payment_squareup_cron_url" class="form-control" value="" />
                                             <div data-toggle="tooltip" data-original-title="{{ text_refresh_token }}" class="input-group-addon btn btn-primary" id="refresh-cron-token">
-                                                <i class="fa fa-refresh"></i>
+                                                <i class="fal fa-refresh"></i>
                                             </div>
                                         </div>
                                         <input id="input_payment_squareup_cron_token" type="hidden" name="payment_squareup_cron_token" value="{{ payment_squareup_cron_token }}" />
@@ -476,7 +476,7 @@ $(document).ready(function() {
           beforeSend : function() {
             $('#refresh_transactions').button('loading');
             $('#transactions_pagination').empty();
-            $('#transactions').html('<tr><td colspan="9" class="text-center"><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;{{ text_loading }}</td></tr>');
+            $('#transactions').html('<tr><td colspan="9" class="text-center"><i class="fal fa-circle-o-notch fa-spin"></i>&nbsp;{{ text_loading }}</td></tr>');
           },
           success : function(data) {
             var html = '';
@@ -538,15 +538,15 @@ $(document).ready(function() {
     var transactionLoading = function() {
         var message = $('#transaction-alert').attr('data-message');
 
-        $('#transaction-alert').html('<div class="text-center alert alert-info"><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;' + message + '</div>');
+        $('#transaction-alert').html('<div class="text-center alert alert-info"><i class="fal fa-circle-o-notch fa-spin"></i>&nbsp;' + message + '</div>');
     }
 
     var transactionError = function(message) {
-        $('#transaction-alert').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="X"><span aria-hidden="true">&times;</span></button><i class="fa fa-exclamation-circle"></i>&nbsp;' + message + '</div>');
+        $('#transaction-alert').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="X"><span aria-hidden="true">&times;</span></button><i class="fal fa-exclamation-circle"></i>&nbsp;' + message + '</div>');
     }
 
     var transactionSuccess = function(message) {
-        $('#transaction-alert').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="X"><span aria-hidden="true">&times;</span></button><i class="fa fa-exclamation-circle"></i>&nbsp;' + message + '</div>');
+        $('#transaction-alert').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="X"><span aria-hidden="true">&times;</span></button><i class="fal fa-exclamation-circle"></i>&nbsp;' + message + '</div>');
     }
 
     var addOrderHistory = function(data, success_callback) {

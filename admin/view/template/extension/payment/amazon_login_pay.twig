@@ -3,8 +3,8 @@
   <div class="page-header">
 	<div class="container-fluid">
 	  <div class="pull-right">
-		<button type="submit" form="form-payment" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
-		<a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+		<button type="submit" form="form-payment" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fal fa-save"></i></button>
+		<a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a></div>
 	  <h1>{{ heading_title }}</h1>      <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
         <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
@@ -14,11 +14,11 @@
   </div>
   <div class="container-fluid">
 	{% if error_warning %}
-		<div class="alert alert-danger alert-dismissible"><button type="button" class="close" data-dismiss="alert">&times;</button><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+		<div class="alert alert-danger alert-dismissible"><button type="button" class="close" data-dismiss="alert">&times;</button><i class="fal fa-exclamation-circle"></i> {{ error_warning }}
 		</div>
 	{% endif %}
 	<div class="alert alert-{{ has_ssl ? 'info' : 'danger' }}">
-		<i class="fa fa-exclamation-circle"></i> {{ text_info_ssl }}
+		<i class="fal fa-exclamation-circle"></i> {{ text_info_ssl }}
 	</div>
 	<div class="alert alert-info">
 	  <form method="POST" target="_blank" action="{{ registration_url }}" class="form-horizontal" id="registration-form">
@@ -48,7 +48,7 @@
 	</div>
 	<div class="panel panel-default">
 	  <div class="panel-heading">
-		<h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+		<h3 class="panel-title"><i class="fal fa-pencil"></i> {{ text_edit }}</h3>
 	  </div>
 	  <div class="panel-body">
 		<form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-payment" class="form-horizontal">
@@ -107,7 +107,7 @@
 			  <div class="input-group">
 			  	<input data-toggle-password type="password" name="payment_amazon_login_pay_access_secret" value="{{ has_modify_permission ? payment_amazon_login_pay_access_secret : text_generic_password }}" placeholder="{{ entry_access_secret }}" id="amazon-login-pay-access-secret" class="form-control" autocomplete="new-password" />
 			  	<div class="input-group-addon btn btn-default toggle-password">
-			  	    <i class="fa fa-eye"></i>
+			  	    <i class="fal fa-eye"></i>
 			  	</div>
 			  </div>
 			  {% if error_access_secret %}
@@ -130,7 +130,7 @@
 			  <div class="input-group">
 			  	<input data-toggle-password type="password" name="payment_amazon_login_pay_client_secret" value="{{ has_modify_permission ? payment_amazon_login_pay_client_secret : text_generic_password }}" placeholder="{{ entry_client_secret }}" id="amazon-login-pay-client-secret" class="form-control" autocomplete="new-password" />
 			  	<div class="input-group-addon btn btn-default toggle-password">
-			  	    <i class="fa fa-eye"></i>
+			  	    <i class="fal fa-eye"></i>
 			  	</div>
 			  </div>
 			  {% if error_client_secret %}
@@ -147,7 +147,7 @@
 		  <div class="form-group">
 			<label class="col-sm-2 control-label" for="input-ipn-url">{{ entry_ipn_url }}</label>
 			<div class="col-sm-10">
-			  <div class="input-group"><span class="input-group-addon"><i class="fa fa-link"></i></span>
+			  <div class="input-group"><span class="input-group-addon"><i class="fal fa-link"></i></span>
 				<input type="text" readonly value="{{ ipn_url }}" id="input-ipn-url" class="form-control" />
 			  </div>
 			</div>
@@ -280,7 +280,7 @@
               <div class="col-sm-10">
                 {% if store_buyer_currencies is empty %}
                     <div class="alert alert-info">
-                        <i class="fa fa-exclamation-circle"></i> {{ text_info_buyer_multi_currencies }}
+                        <i class="fal fa-exclamation-circle"></i> {{ text_info_buyer_multi_currencies }}
                     </div>
                 {% endif %}
                 <select name="payment_amazon_login_pay_buyer_multi_currency" id="amazon-login-pay-buyer-multi-currency" class="form-control">
@@ -367,7 +367,7 @@
           }).appendTo('#form-amazon-login-pay');
           $('.pull-right > .btn-primary').click();
         } catch (e) {
-          $('.container-fluid:eq(1)').prepend('<div class="alert alert-danger alert-dismissible"><button type="button" class="close" data-dismiss="alert">&times;</button><i class="fa fa-exclamation-circle"></i> {{ error_credentials }}</div>')
+          $('.container-fluid:eq(1)').prepend('<div class="alert alert-danger alert-dismissible"><button type="button" class="close" data-dismiss="alert">&times;</button><i class="fal fa-exclamation-circle"></i> {{ error_credentials }}</div>')
         }
       });
       //</script>

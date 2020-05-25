@@ -3,8 +3,8 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <button type="submit" form="form-openbay" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary" onclick="validateForm(); return false;"><i class="fa fa-save"></i></button>
-        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a>
+        <button type="submit" form="form-openbay" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary" onclick="validateForm(); return false;"><i class="fal fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a>
       </div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
@@ -109,7 +109,7 @@
       type: 'post',
       dataType: 'json',
       beforeSend: function() {
-        $('#button-patch').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>');
+        $('#button-patch').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>');
         $("#button-patch").attr('disabled', 'disabled');
       },
       success: function() {
@@ -129,7 +129,7 @@
     $.ajax({
       url: 'index.php?route=marketplace/openbay/faqclear&user_token={{ user_token }}',
       beforeSend: function() {
-        $('#button-clear-faq').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>');
+        $('#button-clear-faq').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>');
         $("#button-clear-faq").attr('disabled','disabled');
       },
       type: 'post',
@@ -157,7 +157,7 @@
         dataType: 'json',
         data: 'pass=' + pass,
         beforeSend: function() {
-          $('#button-clear-data').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>');
+          $('#button-clear-data').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>');
         },
         success: function(json) {
           setTimeout(function() {
@@ -224,7 +224,7 @@
       beforeSend: function() { },
       success: function(json) {
         if (json.error == 1) {
-          $('#update-error').removeClass('alert-danger').addClass('alert-info').html('<i class="fa fa-check"></i> ' + json.response).show();
+          $('#update-error').removeClass('alert-danger').addClass('alert-info').html('<i class="fal fa-check"></i> ' + json.response).show();
           $('#update-v2-progress').hide();
           $('#update-v2-box').fadeIn();
         } else {

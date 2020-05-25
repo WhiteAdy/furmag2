@@ -3,9 +3,9 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">{% if not error_signature %}
-        <button type="button" id="button-opencart" data-toggle="tooltip" title="{{ button_opencart }}" class="btn btn-info"><i class="fa fa-cog"></i></button>
+        <button type="button" id="button-opencart" data-toggle="tooltip" title="{{ button_opencart }}" class="btn btn-info"><i class="fal fa-cog"></i></button>
         {% else %}
-        <button type="button" id="button-opencart" data-toggle="tooltip" title="{{ error_signature }}"  data-placement="left" class="btn btn-danger"><i class="fa fa-exclamation-triangle"></i></button>
+        <button type="button" id="button-opencart" data-toggle="tooltip" title="{{ error_signature }}"  data-placement="left" class="btn btn-danger"><i class="fal fa-exclamation-triangle"></i></button>
         {% endif %}</div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
@@ -18,7 +18,7 @@
   <div class="container-fluid">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-puzzle-piece"></i> {{ text_list }}</h3>
+        <h3 class="panel-title"><i class="fal fa-puzzle-piece"></i> {{ text_list }}</h3>
       </div>
       <div class="panel-body">
         <div class="well">
@@ -40,7 +40,7 @@
               <input type="hidden" name="filter_license" value="{{ filter_license }}" class="form-control" />
               <input type="hidden" name="filter_partner" value="{{ filter_partner }}" class="form-control" />
               <input type="hidden" name="sort" value="{{ sort }}" class="form-control" />
-              <button type="button" id="button-filter" class="btn btn-primary"><i class="fa fa-filter"></i></button>
+              <button type="button" id="button-filter" class="btn btn-primary"><i class="fal fa-filter"></i></button>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
           </div>
           <div class="col-sm-3 col-xs-5">
             <div class="input-group pull-right">
-              <div class="input-group-addon"><i class="fa fa-sort-amount-asc"></i></div>
+              <div class="input-group-addon"><i class="fal fa-sort-amount-asc"></i></div>
               <select onchange="location = this.value;" class="form-control">
                 
               
@@ -105,7 +105,7 @@
                 <div class="extension-rate">
                   <div class="row">
                     <div class="col-xs-6">{% for i in 1..5 %}
-                      {% if extension.rating >= i %}<i class="fa fa-star"></i>{% else %}<i class="fa fa-star-o"></i>{% endif %}
+                      {% if extension.rating >= i %}<i class="fal fa-star"></i>{% else %}<i class="fal fa-star-o"></i>{% endif %}
                       {% endfor %}</div>
                     <div class="col-xs-6">
                       <div class="text-right">{{ extension.rating_total }} {{ text_reviews }}</div>
@@ -134,7 +134,7 @@
                 <div class="extension-rate">
                   <div class="row">
                     <div class="col-xs-6">{% for i in 1..5 %}
-                      {% if extension.rating >= i %}<i class="fa fa-star"></i>{% else %}<i class="fa fa-star-o"></i>{% endif %}
+                      {% if extension.rating >= i %}<i class="fal fa-star"></i>{% else %}<i class="fal fa-star-o"></i>{% endif %}
                       {% endfor %}</div>
                     <div class="col-xs-6">
                       <div class="text-right">{{ extension.rating_total }} {{ text_reviews }}</div>

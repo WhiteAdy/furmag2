@@ -3,8 +3,8 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <button type="submit" form="form-fba-settings" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary" onclick="validateForm(); return false;"><i class="fa fa-check-circle"></i></button>
-        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a>
+        <button type="submit" form="form-fba-settings" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary" onclick="validateForm(); return false;"><i class="fal fa-check-circle"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a>
       </div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
@@ -16,16 +16,16 @@
   </div>
   <div class="container-fluid">
     {% if error_warning %}
-      <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}</div>
+      <div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> {{ error_warning }}</div>
     {% endif %}
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-amazon"></i> {{ text_edit }}</h3>
+        <h3 class="panel-title"><i class="fal fa-amazon"></i> {{ text_edit }}</h3>
       </div>
       <div class="panel-body">
         <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-fba-settings" class="form-horizontal">
           {% if openbay_fba_api_key is empty %}
-          <a href="{{ link_signup }}" target="_blank"><div class="alert alert-info"><h5 style="font-size: 14px;"><i class="fa fa-user-plus fa-2x"></i>&nbsp;&nbsp;{{ text_register_banner }}</h5></div></a>
+          <a href="{{ link_signup }}" target="_blank"><div class="alert alert-info"><h5 style="font-size: 14px;"><i class="fal fa-user-plus fa-2x"></i>&nbsp;&nbsp;{{ text_register_banner }}</h5></div></a>
           {% endif %}
           <div class="tab-pane active" id="tab-general">
             <div class="well" id="credential-container">
@@ -118,7 +118,7 @@
             <div class="form-group">
               <label class="col-sm-2 control-label" for="openbay_fba_order_prefix"><span data-toggle="tooltip" data-container="#tab-content" title="{{ help_order_id_prefix }}">{{ entry_order_id_prefix }}</span></label>
               <div class="col-sm-10">
-                <p class="alert alert-warning"><i class="fa fa-exclamation-circle"></i> {{ text_prefix_warning }}</p>
+                <p class="alert alert-warning"><i class="fal fa-exclamation-circle"></i> {{ text_prefix_warning }}</p>
                 <input{% if prefix_can_edit == false %} disabled{% endif %} type="text" name="openbay_fba_order_prefix" value="{{ openbay_fba_order_prefix }}" placeholder="{{ entry_order_id_prefix }}" id="openbay_fba_order_prefix" class="form-control" />
               </div>
             </div>
@@ -166,19 +166,19 @@ $('#button-verify').click(function() {
     method: 'POST',
     data: { 'openbay_fba_api_key' : $('#openbay_fba_api_key').val(), 'openbay_fba_api_account_id' : $('#openbay_fba_api_account_id').val(), 'openbay_fba_encryption_key' : $('#openbay_fba_encryption_key').val() },
     beforeSend: function() {
-      $('#button-verify').empty().html('<i class="fa fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
+      $('#button-verify').empty().html('<i class="fal fa-cog fa-lg fa-spin"></i>').attr('disabled','disabled');
       $('.alert-dismissible').remove();
     },
     success: function(json) {
       if (json.error === false) {
-        $('#credential-container').prepend('<div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ text_validate_success }}</div>');
+        $('#credential-container').prepend('<div class="alert alert-success alert-dismissible"><i class="fal fa-check-circle"></i> {{ text_validate_success }}</div>');
       } else {
         if (json.error_messages) {
           $.each(json.error_messages, function(error_key, error_message) {
-            $('#credential-container').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + error_message.message + '</div>');
+            $('#credential-container').prepend('<div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> ' + error_message.message + '</div>');
           });
         } else {
-          $('#credential-container').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_validation }}</div>');
+          $('#credential-container').prepend('<div class="alert alert-danger alert-dismissible"><i class="fal fa-exclamation-circle"></i> {{ error_validation }}</div>');
           $('#button-verify').html('{{ button_verify }}');
         }
       }

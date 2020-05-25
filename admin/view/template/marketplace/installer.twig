@@ -13,7 +13,7 @@
 <div class="container-fluid">
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title"><i class="fa fa-puzzle-piece"></i> {{ text_upload }}</h3>
+      <h3 class="panel-title"><i class="fal fa-puzzle-piece"></i> {{ text_upload }}</h3>
     </div>
     <div class="panel-body">
       <form class="form-horizontal">
@@ -22,7 +22,7 @@
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="button-upload"><span data-toggle="tooltip" title="{{ help_upload }}">{{ entry_upload }}</span></label>
             <div class="col-sm-10">
-              <button type="button" id="button-upload" data-loading-text="{{ text_loading }}" class="btn btn-primary"><i class="fa fa-upload"></i> {{ button_upload }}</button>
+              <button type="button" id="button-upload" data-loading-text="{{ text_loading }}" class="btn btn-primary"><i class="fal fa-upload"></i> {{ button_upload }}</button>
             </div>
           </div>
         </fieldset>
@@ -168,7 +168,7 @@ $('#history').on('click', '.btn-danger', function(e) {
 			$('.alert-dismissible').remove();
 			
 			if (json['success']) {
-				$('#content > .container-fluid').prepend('<div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+				$('#content > .container-fluid').prepend('<div class="alert alert-success alert-dismissible"><i class="fal fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
 				$('#history').load('index.php?route=marketplace/installer/history&user_token={{ user_token }}');
 			}

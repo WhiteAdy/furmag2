@@ -4,8 +4,8 @@
     <div class="page-header">
         <div class="container-fluid">
             <div class="pull-right">
-                <a href="{{ text_video_tutorial_url_install }}" target="_blank" class="btn btn-info" data-toggle="tooltip" title="{{ button_video_tutorial_install }}"><i class="fa fa-video-camera"></i></a>
-                <a href="{{ cancel }}" class="btn btn-default" data-toggle="tooltip" title="{{ button_cancel }}"><i class="fa fa-reply"></i></a>
+                <a href="{{ text_video_tutorial_url_install }}" target="_blank" class="btn btn-info" data-toggle="tooltip" title="{{ button_video_tutorial_install }}"><i class="fal fa-video-camera"></i></a>
+                <a href="{{ cancel }}" class="btn btn-default" data-toggle="tooltip" title="{{ button_cancel }}"><i class="fal fa-reply"></i></a>
             </div>
             <h1>{{ heading_title }}</h1>
             <ul class="breadcrumb">
@@ -21,20 +21,20 @@
         {% endif %}
         {% if success %}
             <div class="alert alert-success alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="{{ text_close }}"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
-                <i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;{{ success }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="{{ text_close }}"><span aria-hidden="true"><i class="fal fa-close"></i></span></button>
+                <i class="fal fa-check-circle" aria-hidden="true"></i>&nbsp;{{ success }}
             </div>
         {% endif %}
         {% if error %}
             <div class="alert alert-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="{{ text_close }}"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
-                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;{{ error }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="{{ text_close }}"><span aria-hidden="true"><i class="fal fa-close"></i></span></button>
+                <i class="fal fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;{{ error }}
             </div>
         {% endif %}
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">
-                    <i class="fa fa-truck"></i>&nbsp;
+                    <i class="fal fa-truck"></i>&nbsp;
                     <span>
                         {% if from_dashboard %}
                             {{ text_panel_heading_shipping_taxes_2 }}
@@ -78,7 +78,7 @@
                             </div>
                             <div class="col-sm-9" data-shipping-visible-on="flat">
                                 <div class="input-group">
-                                    <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+                                    <div class="input-group-addon"><i class="fal fa-dollar"></i></div>
                                     <input type="number" class="form-control" name="advertise_google_shipping_taxes[flat_rate]" value="{{ advertise_google_shipping_taxes.flat_rate }}" />
                                     <div class="input-group-addon">{{ text_usd }}</div>
                                 </div>
@@ -105,7 +105,7 @@
                                 <div class="input-group margin-top-10">
                                     <div class="input-group-addon"><span data-toggle="tooltip" title="{{ help_carrier_price_percentage }}">{{ text_carrier_price_percentage }}</span></div>
                                     <input type="number" class="form-control" name="advertise_google_shipping_taxes[carrier_price_percentage]" value="{{ advertise_google_shipping_taxes.carrier_price_percentage }}" />
-                                    <div class="input-group-addon"><i class="fa fa-percent"></i></div>
+                                    <div class="input-group-addon"><i class="fal fa-percent"></i></div>
                                 </div>
                                 {% if error_carrier_price_percentage %}
                                     <div class="text-danger">{{ error_carrier_price_percentage }}</div>
