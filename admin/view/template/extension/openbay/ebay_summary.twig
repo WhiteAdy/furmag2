@@ -89,7 +89,7 @@
         $('.data-row').remove();
       },
       success: function(json) {
-          $('#load-usage').empty().html('<i class="fal fa-refresh"></i> {{ button_refresh }}').removeAttr('disabled');
+          $('#load-usage').empty().html('<i class="fal fa-redo"></i> {{ button_refresh }}').removeAttr('disabled');
 
           if (json.data.summary.QuantityLimitRemaining != ''){
               var limitHtml = '';

@@ -22,14 +22,14 @@ function getURLVar(key) {
 	}
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
 	//Form Submit for IE Browser
-	$('button[type=\'submit\']').on('click', function() {
+	$("button[type='submit']").on('click', function () {
 		$("form[id*='form-']").submit();
 	});
 
 	// Highlight any found errors
-	$('.text-danger').each(function() {
+	$('.text-danger').each(function () {
 		var element = $(this).parent().parent();
 
 		if (element.hasClass('form-group')) {
@@ -38,40 +38,40 @@ $(document).ready(function() {
 	});
 
 	// tooltips on hover
-	$('[data-toggle=\'tooltip\']').tooltip({container: 'body', html: true});
+	$("[data-toggle='tooltip']").tooltip({ container: 'body', html: true });
 
 	// Makes tooltips work on ajax generated content
-	$(document).ajaxStop(function() {
-		$('[data-toggle=\'tooltip\']').tooltip({container: 'body'});
+	$(document).ajaxStop(function () {
+		$("[data-toggle='tooltip']").tooltip({ container: 'body' });
 	});
 
 	// https://github.com/opencart/opencart/issues/2595
 	$.event.special.remove = {
-		remove: function(o) {
+		remove: function (o) {
 			if (o.handler) {
 				o.handler.apply(this, arguments);
 			}
-		}
-	}
-	
+		},
+	};
+
 	// tooltip remove
-	$('[data-toggle=\'tooltip\']').on('remove', function() {
+	$("[data-toggle='tooltip']").on('remove', function () {
 		$(this).tooltip('destroy');
 	});
 
 	// Tooltip remove fixed
-	$(document).on('click', '[data-toggle=\'tooltip\']', function(e) {
+	$(document).on('click', "[data-toggle='tooltip']", function (e) {
 		$('body > .tooltip').remove();
 	});
-	
-	$('#button-menu').on('click', function(e) {
+
+	$('#button-menu').on('click', function (e) {
 		e.preventDefault();
-		
+
 		$('#column-left').toggleClass('active');
 	});
 
 	// Set last page opened on the menu
-	$('#menu a[href]').on('click', function() {
+	$('#menu a[href]').on('click', function () {
 		sessionStorage.setItem('menu', $(this).attr('href'));
 	});
 
@@ -79,17 +79,25 @@ $(document).ready(function() {
 		$('#menu #dashboard').addClass('active');
 	} else {
 		// Sets active and open to selected page in the left column menu.
-		$('#menu a[href=\'' + sessionStorage.getItem('menu') + '\']').parent().addClass('active');
+		$("#menu a[href='" + sessionStorage.getItem('menu') + "']")
+			.parent()
+			.addClass('active');
 	}
-	
-	$('#menu a[href=\'' + sessionStorage.getItem('menu') + '\']').parents('li > a').removeClass('collapsed');
-	
-	$('#menu a[href=\'' + sessionStorage.getItem('menu') + '\']').parents('ul').addClass('in');
-	
-	$('#menu a[href=\'' + sessionStorage.getItem('menu') + '\']').parents('li').addClass('active');
-	
+
+	$("#menu a[href='" + sessionStorage.getItem('menu') + "']")
+		.parents('li > a')
+		.removeClass('collapsed');
+
+	$("#menu a[href='" + sessionStorage.getItem('menu') + "']")
+		.parents('ul')
+		.addClass('in');
+
+	$("#menu a[href='" + sessionStorage.getItem('menu') + "']")
+		.parents('li')
+		.addClass('active');
+
 	// Image Manager
-	$(document).on('click', 'a[data-toggle=\'image\']', function(e) {
+	$(document).on('click', "a[data-toggle='image']", function (e) {
 		var $element = $(this);
 		var $popover = $element.data('bs.popover'); // element has bs popover?
 
@@ -107,47 +115,57 @@ $(document).ready(function() {
 			html: true,
 			placement: 'right',
 			trigger: 'manual',
-			content: function() {
-				return '<button type="button" id="button-image" class="btn btn-primary"><i class="fa fa-pencil"></i></button> <button type="button" id="button-clear" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>';
-			}
+			content: function () {
+				return '<button type="button" id="button-image" class="btn btn-primary"><i class="fa fa-pencil"></i></button> <button type="button" id="button-clear" class="btn btn-danger"><i class="fa fa-trash"></i></button>';
+			},
 		});
 
 		$element.popover('show');
 
-		$('#button-image').on('click', function() {
+		$('#button-image').on('click', function () {
 			var $button = $(this);
-			var $icon   = $button.find('> i');
+			var $icon = $button.find('> i');
 
 			$('#modal-image').remove();
 
 			$.ajax({
-				url: 'index.php?route=common/filemanager&user_token=' + getURLVar('user_token') + '&target=' + $element.parent().find('input').attr('id') + '&thumb=' + $element.attr('id'),
+				url:
+					'index.php?route=common/filemanager&user_token=' +
+					getURLVar('user_token') +
+					'&target=' +
+					$element.parent().find('input').attr('id') +
+					'&thumb=' +
+					$element.attr('id'),
 				dataType: 'html',
-				beforeSend: function() {
+				beforeSend: function () {
 					$button.prop('disabled', true);
 					if ($icon.length) {
 						$icon.attr('class', 'fa fa-circle-o-notch fa-spin');
 					}
 				},
-				complete: function() {
+				complete: function () {
 					$button.prop('disabled', false);
 
 					if ($icon.length) {
 						$icon.attr('class', 'fa fa-pencil');
 					}
 				},
-				success: function(html) {
-					$('body').append('<div id="modal-image" class="modal">' + html + '</div>');
+				success: function (html) {
+					$('body').append(
+						'<div id="modal-image" class="modal">' + html + '</div>'
+					);
 
 					$('#modal-image').modal('show');
-				}
+				},
 			});
 
 			$element.popover('destroy');
 		});
 
-		$('#button-clear').on('click', function() {
-			$element.find('img').attr('src', $element.find('img').attr('data-placeholder'));
+		$('#button-clear').on('click', function () {
+			$element
+				.find('img')
+				.attr('src', $element.find('img').attr('data-placeholder'));
 
 			$element.parent().find('input').val('');
 
@@ -157,9 +175,9 @@ $(document).ready(function() {
 });
 
 // Autocomplete */
-(function($) {
-	$.fn.autocomplete = function(option) {
-		return this.each(function() {
+(function ($) {
+	$.fn.autocomplete = function (option) {
+		return this.each(function () {
 			var $this = $(this);
 			var $dropdown = $('<ul class="dropdown-menu" />');
 
@@ -171,20 +189,24 @@ $(document).ready(function() {
 			$this.attr('autocomplete', 'off');
 
 			// Focus
-			$this.on('focus', function() {
+			$this.on('focus', function () {
 				this.request();
 			});
 
 			// Blur
-			$this.on('blur', function() {
-				setTimeout(function(object) {
-					object.hide();
-				}, 200, this);
+			$this.on('blur', function () {
+				setTimeout(
+					function (object) {
+						object.hide();
+					},
+					200,
+					this
+				);
 			});
 
 			// Keydown
-			$this.on('keydown', function(event) {
-				switch(event.keyCode) {
+			$this.on('keydown', function (event) {
+				switch (event.keyCode) {
 					case 27: // escape
 						this.hide();
 						break;
@@ -195,7 +217,7 @@ $(document).ready(function() {
 			});
 
 			// Click
-			this.click = function(event) {
+			this.click = function (event) {
 				event.preventDefault();
 
 				var value = $(event.target).parent().attr('data-value');
@@ -203,40 +225,48 @@ $(document).ready(function() {
 				if (value && this.items[value]) {
 					this.select(this.items[value]);
 				}
-			}
+			};
 
 			// Show
-			this.show = function() {
+			this.show = function () {
 				var pos = $this.position();
 
 				$dropdown.css({
 					top: pos.top + $this.outerHeight(),
-					left: pos.left
+					left: pos.left,
 				});
 
 				$dropdown.show();
-			}
+			};
 
 			// Hide
-			this.hide = function() {
+			this.hide = function () {
 				$dropdown.hide();
-			}
+			};
 
 			// Request
-			this.request = function() {
+			this.request = function () {
 				clearTimeout(this.timer);
 
-				this.timer = setTimeout(function(object) {
-					object.source($(object).val(), $.proxy(object.response, object));
-				}, 200, this);
-			}
+				this.timer = setTimeout(
+					function (object) {
+						object.source(
+							$(object).val(),
+							$.proxy(object.response, object)
+						);
+					},
+					200,
+					this
+				);
+			};
 
 			// Response
-			this.response = function(json) {
+			this.response = function (json) {
 				var html = '';
 				var category = {};
 				var name;
-				var i = 0, j = 0;
+				var i = 0,
+					j = 0;
 
 				if (json.length) {
 					for (i = 0; i < json.length; i++) {
@@ -245,7 +275,12 @@ $(document).ready(function() {
 
 						if (!json[i]['category']) {
 							// ungrouped items
-							html += '<li data-value="' + json[i]['value'] + '"><a href="#">' + json[i]['label'] + '</a></li>';
+							html +=
+								'<li data-value="' +
+								json[i]['value'] +
+								'"><a href="#">' +
+								json[i]['label'] +
+								'</a></li>';
 						} else {
 							// grouped items
 							name = json[i]['category'];
@@ -261,7 +296,12 @@ $(document).ready(function() {
 						html += '<li class="dropdown-header">' + name + '</li>';
 
 						for (j = 0; j < category[name].length; j++) {
-							html += '<li data-value="' + category[name][j]['value'] + '"><a href="#">&nbsp;&nbsp;&nbsp;' + category[name][j]['label'] + '</a></li>';
+							html +=
+								'<li data-value="' +
+								category[name][j]['value'] +
+								'"><a href="#">&nbsp;&nbsp;&nbsp;' +
+								category[name][j]['label'] +
+								'</a></li>';
 						}
 					}
 				}
@@ -273,10 +313,10 @@ $(document).ready(function() {
 				}
 
 				$dropdown.html(html);
-			}
+			};
 
 			$dropdown.on('click', '> li > a', $.proxy(this.click, this));
 			$this.after($dropdown);
 		});
-	}
+	};
 })(window.jQuery);

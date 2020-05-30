@@ -5,3 +5,5 @@ $_['text_empty']     = 'Your shopping cart is empty!';
 $_['text_cart']      = 'View Cart';
 $_['text_checkout']  = 'Checkout';
 $_['text_recurring'] = 'Payment Profile';
+$_['text_shopping_cart'] = 'Shopping Cart';
+$_['text_continue_shopping'] = 'Continue shopping';

@@ -119,7 +119,7 @@
               </td>
               <td class="text-center">
                 <a href="{{ order.view_order_link }}" data-toggle="tooltip" title="{{ text_view_order }}" class="btn btn-info" target="_blank"><i class="fal fa-eye"></i></a>
-                <button class="btn btn-danger button-remove-order" onclick="removeOrderFromUpdate({{ order.order_id }}); return false;" data-toggle="tooltip" title="{{ button_remove_order }}"><i class="fal fa-trash-o"></i></button>
+                <button class="btn btn-danger button-remove-order" onclick="removeOrderFromUpdate({{ order.order_id }}); return false;" data-toggle="tooltip" title="{{ button_remove_order }}"><i class="fal fa-trash"></i></button>
               </td>
             </tr>
           {% endfor %}

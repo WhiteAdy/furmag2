@@ -5,7 +5,7 @@
       <div class="pull-right">
         <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fal fa-reply"></i></a>
         {% if fba_order_status == 1 %}
-          <a href="{{ resend_link }}" id="button-resend" data-toggle="tooltip" title="{{ button_resend }}" class="btn btn-info" value=""><i class="fal fa-refresh"></i></a>
+          <a href="{{ resend_link }}" id="button-resend" data-toggle="tooltip" title="{{ button_resend }}" class="btn btn-info" value=""><i class="fal fa-redo"></i></a>
         {% endif %}
         {% if fba_order_status == 2 %}
           <a href="{{ ship_link }}" id="button-ship" data-toggle="tooltip" title="{{ button_ship }}" class="btn btn-info" value=""><i class="fal fa-truck"></i></a>
