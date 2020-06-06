@@ -116,7 +116,7 @@ $(document).ready(function () {
 			placement: 'right',
 			trigger: 'manual',
 			content: function () {
-				return '<button type="button" id="button-image" class="btn btn-primary"><i class="fa fa-pencil"></i></button> <button type="button" id="button-clear" class="btn btn-danger"><i class="fa fa-trash"></i></button>';
+				return '<button type="button" id="button-image" class="btn btn-primary"><i class="fal fa-pencil"></i></button> <button type="button" id="button-clear" class="btn btn-danger"><i class="fal fa-trash"></i></button>';
 			},
 		});
 
@@ -140,14 +140,14 @@ $(document).ready(function () {
 				beforeSend: function () {
 					$button.prop('disabled', true);
 					if ($icon.length) {
-						$icon.attr('class', 'fa fa-circle-o-notch fa-spin');
+						$icon.attr('class', 'fal fa-circle-o-notch fa-spin');
 					}
 				},
 				complete: function () {
 					$button.prop('disabled', false);
 
 					if ($icon.length) {
-						$icon.attr('class', 'fa fa-pencil');
+						$icon.attr('class', 'fal fa-pencil');
 					}
 				},
 				success: function (html) {

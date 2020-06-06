@@ -3,7 +3,9 @@ class ControllerCommonHeader extends Controller {
 	public function index() {
 		// Analytics
 		$this->load->model('setting/extension');
+		$this->load->model('catalog/information');
 
+		$data['informations'] = array();
 		$data['analytics'] = array();
 
 		$analytics = $this->model_setting_extension->getExtensions('analytics');

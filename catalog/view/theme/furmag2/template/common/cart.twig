@@ -3,7 +3,7 @@
     <i class="fal fa-shopping-cart"></i>
     <span id="cart-total">
       <span class="cart-count mini-counter">{{ cart_count }}</span>
-      <span class="hidden-xs">{{ cart_total }}</span>
+      <span class="hidden-xs" id="value-no-currency">{{ cart_total }}</span>
       <span class="hidden-xs">{{ total_currency }}</span>
     </span>
   </button>
@@ -67,14 +67,14 @@
 <div id="cart-modal">
   <div class="cart-modal-header">
     <h3>{{ text_shopping_cart }}</h3>
-    <button id="cart-modal-close">
+    <button class="cart-modal-close" id="cart-modal-close">
       <i class="fal fa-times"></i>
     </button>
   </div>
   <ul class="cart-modal-body">
     {% if products or vouchers %}
       {% for product in products %}
-        <li>
+        <li data-cart_id={{ product.cart_id }} data-product_id={{ product.product_id }}>
           {% if product.thumb %}
             <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail" /></a>
           {% endif %}
@@ -86,12 +86,16 @@
                 {% endfor %}
               {% endif %}
             </div>
-              <p class="cart-modal-product-total">{{ product.total }}</p>
+             <p class="cart-modal-product-unit-price">{{ product.price }}</p>
             <div class="cart-modal-product-quantity">
               <button class="subtract"><i class="fal fa-minus"></i></button>
               <input type="number" value="{{ product.quantity }}" autocomplete="off">
               <button class="add"><i class="fal fa-plus"></i></button>
             </div>
+            <p class="cart-modal-product-total">{{ product.total }}</p>
+            <button class="cart-modal-close remove-item-btn">
+              <i class="fal fa-times"></i>
+            </button>
         </li>
       {% endfor %}
     {% else %}

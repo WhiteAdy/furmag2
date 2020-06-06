@@ -356,6 +356,14 @@ class ControllerCatalogInformation extends Controller {
 			$data['information_store'] = array(0);
 		}
 
+		if (isset($this->request->post['top'])) {
+			$data['top'] = $this->request->post['top'];
+		} elseif (!empty($information_info['top'])) {
+			$data['top'] = $information_info['top'];
+		} else {
+			$data['top'] = 0;
+		}
+
 		if (isset($this->request->post['bottom'])) {
 			$data['bottom'] = $this->request->post['bottom'];
 		} elseif (!empty($information_info)) {
@@ -404,6 +412,13 @@ class ControllerCatalogInformation extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
+
+		$topOptionValue = $this->model_catalog_information->getTopOptionValue();
+
+		if(!isset($topOptionValue)) {
+			$this->model_catalog_information->addTopOptionColumn();
+		}
+		
 		$this->response->setOutput($this->load->view('catalog/information_form', $data));
 	}
 

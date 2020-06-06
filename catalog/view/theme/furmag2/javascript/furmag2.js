@@ -14,14 +14,13 @@ const headerStickyHandler = (e) => {
 };
 
 const header = document.getElementsByTagName('header')[0];
-const homeContent = document.getElementsByTagName('header')[0]
-	.nextElementSibling;
+const content = document.getElementsByTagName('header')[0].nextElementSibling;
 const bodyElement = document.getElementsByTagName('body')[0];
 
 const observer = new IntersectionObserver(headerStickyHandler, {
 	rootMargin: '0px 0px -100% 0px',
 });
-observer.observe(homeContent);
+observer.observe(content);
 
 const backdrop = document.getElementById('backdrop');
 const searchInput = document.getElementById('searchInput');
@@ -35,7 +34,6 @@ const toggleBackdrop = () => {
 	backdrop.classList.toggle('visible');
 };
 const cartModal = document.getElementById('cart-modal');
-const cartModalCloseBtn = document.getElementById('cart-modal-close');
 const modalContinueShoppingBtn = document.getElementsByClassName(
 	'continue-shopping'
 )[0];
@@ -61,7 +59,7 @@ const backdropClickHandler = () => {
 header.addEventListener('click', (e) => {
 	if (
 		e.target === backdrop ||
-		e.target === cartModalCloseBtn ||
+		e.target.id === 'cart-modal-close' ||
 		e.target === modalContinueShoppingBtn
 	) {
 		backdropClickHandler();
@@ -73,6 +71,24 @@ header.addEventListener('click', (e) => {
 		if (e.target === cartButton) {
 			toggleBackdrop();
 			miniCartToggleHandler();
+		}
+		if (e.target.classList.contains('remove-item-btn')) {
+			e.target.parentElement.classList.add('removed');
+			setTimeout(() => {
+				cart.remove(e.target.parentElement.dataset.cart_id);
+			}, 250);
+		}
+		if (e.target.classList.contains('add')) {
+			cart.add(e.target.parentElement.parentElement.dataset.product_id);
+		}
+		if (e.target.classList.contains('subtract')) {
+			if (e.target.nextElementSibling.value > 1) {
+				e.target.nextElementSibling.value--;
+				cart.update(
+					e.target.parentElement.parentElement.dataset.cart_id,
+					e.target.nextElementSibling.value
+				);
+			}
 		}
 	}
 });

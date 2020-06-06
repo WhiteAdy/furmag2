@@ -5,11 +5,9 @@ class ControllerExtensionModuleSlideshow extends Controller {
 
 		$this->load->model('design/banner');
 		$this->load->model('tool/image');
+		$this->document->addScript('catalog/view/javascript/swiper/swiper.min.js');		
+		$this->document->addStyle('catalog/view/theme/furmag2/stylesheet/swiper.min.css');
 
-		$this->document->addStyle('catalog/view/javascript/jquery/swiper/css/swiper.min.css');
-		$this->document->addStyle('catalog/view/javascript/jquery/swiper/css/opencart.css');
-		$this->document->addScript('catalog/view/javascript/jquery/swiper/js/swiper.jquery.js');
-		
 		$data['banners'] = array();
 
 		$results = $this->model_design_banner->getBanner($setting['banner_id']);

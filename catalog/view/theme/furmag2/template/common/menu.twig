@@ -1,9 +1,8 @@
 <ul id="menu">
   <li><i class="fal fa-bars"></i>Products</li>
-  <li><a href="#">info page 1</a></li>
-  <li><a href="#">info page 2</a></li>
-  <li><a href="#">info page 3</a></li>
-  <li><a href="#">info page 4</a></li>
+  {% for information in informations  %}
+    <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+  {% endfor %}
 </ul>
 
 {# {% if categories %}

@@ -370,7 +370,8 @@ class ControllerCheckoutCart extends Controller {
 					array_multisort($sort_order, SORT_ASC, $totals);
 				}
 
-				$json['total'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+				// $json['total'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+					$json['total'] = $this->currency->format($total, $this->session->data['currency']);			
 			} else {
 				$json['redirect'] = str_replace('&amp;', '&', $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']));
 			}
@@ -381,6 +382,7 @@ class ControllerCheckoutCart extends Controller {
 	}
 
 	public function edit() {
+
 		$this->load->language('checkout/cart');
 
 		$json = array();
@@ -391,7 +393,8 @@ class ControllerCheckoutCart extends Controller {
 				$this->cart->update($key, $value);
 			}
 
-			$this->session->data['success'] = $this->language->get('text_remove');
+			// $this->session->data['success'] = $this->language->get('text_remove');
+			$json['success'] = $this->language->get('text_remove');
 
 			unset($this->session->data['shipping_method']);
 			unset($this->session->data['shipping_methods']);
@@ -399,11 +402,17 @@ class ControllerCheckoutCart extends Controller {
 			unset($this->session->data['payment_methods']);
 			unset($this->session->data['reward']);
 
-			$this->response->redirect($this->url->link('checkout/cart'));
+			// $this->response->redirect($this->url->link('checkout/cart', 'language=' . $this->config->get('config_language')));
 		}
 
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
+
+
+
+
+
+
 	}
 
 	public function remove() {
