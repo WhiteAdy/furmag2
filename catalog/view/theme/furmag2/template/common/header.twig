@@ -37,13 +37,14 @@
   <header>
     <div class="container">
       <div class="row top-white-row">
-        <div class="col-xs-3 logo-col">
+        <button id="hamburger-button"><i class="fal fa-bars"></i></button>
+        <div class="col-sm-2 logo-col">
           <div id="logo">{% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>{% else %}
             <h1><a href="{{ home }}">{{ name }}</a></h1>
             {% endif %}</div>
         </div>
-        <div class="col-xs-5 search-col">{{ search }}</div>
-        <div class="col-xs-4 top-right-group">
+        <div class="col-sm-6 search-col">{{ search }}</div>
+        <div class="col-sm-4 top-right-group">
           <div id="account-menu-button">
             <a href="{{ account }}">
               <i class="fal fa-user"></i>

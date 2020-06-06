@@ -45,13 +45,26 @@ header {
 	position: sticky;
 	top: -91px;
 	transition: top 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-	z-index: 2;
+	z-index: 3;
 }
-
 header.sticky {
 	top: 0;
 }
-
+#hamburger-button {
+	display: none;
+	place-items: center;
+	grid-row: 2;
+	grid-column: 1/2;
+	background: none;
+	border: 1px solid var(--theme-primary-color);
+	border-radius: 25px;
+	justify-self: start;
+	margin-left: 15px;
+	align-self: center;
+	width: 55px;
+	height: 35px;
+	color: var(--theme-primary-color);
+}
 .top-white-row {
 	display: flex;
 	align-items: stretch;
@@ -68,7 +81,7 @@ header.sticky {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	max-width: 475px;
+	max-width: 525px;
 	margin: 0 auto;
 	z-index: 1;
 }
@@ -124,7 +137,7 @@ header.sticky {
 	border: none;
 	background: none;
 	padding: 0;
-	z-index: 2;
+	z-index: 3;
 	color: var(--theme-primary-color);
 }
 
@@ -174,7 +187,7 @@ header.sticky {
 
 .cart-count {
 	left: 12px;
-	top: 7px;
+	top: 10px;
 	background: var(--theme-secondary-color);
 }
 
@@ -377,8 +390,7 @@ header.sticky {
 
 .cart-modal-body li.removed {
 	padding: 0;
-	max-height: 0;
-	/* border: 0; */
+	max-height: 0 !important;
 }
 
 .cart-modal-body li > *:first-child {
@@ -614,22 +626,61 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 @media (max-width: 767px) {
-	#menu li:not(:first-child) {
-		display: none;
+	#menu > li {
+		display: none !important;
 	}
-
+	#header-second-row {
+		min-height: 3px;
+	}
+	.top-white-row {
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(5, 1fr);
+		height: 100px;
+	}
+	#hamburger-button {
+		display: grid;
+	}
+	#hamburger-button i {
+		font-weight: bold;
+	}
+	.logo-col {
+		grid-row: 1;
+		grid-column: 1/4;
+	}
+	.search-col {
+		grid-row: 2;
+		grid-column: 2/6;
+	}
+	#search {
+		max-width: 100%;
+	}
+	#search > button {
+		right: 10px;
+	}
+	.search-bar-gradient-border {
+		top: 6px;
+		bottom: 6px;
+	}
+	#search.search-bar-focused .search-bar-gradient-border {
+		top: 5px;
+		bottom: 5px;
+		left: -2px;
+		right: -2px;
+	}
+	.top-right-group {
+		grid-row: 1;
+		grid-column: 4/6;
+	}
 	#account-menu {
 		display: none;
 	}
-
 	#mini-cart {
 		display: none;
 	}
-
 	#cart:hover #mini-cart {
 		top: 100px;
 	}
-
 	#cart-modal {
 		left: 15px !important;
 		right: 15px !important;
