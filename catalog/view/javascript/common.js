@@ -193,7 +193,12 @@ var cart = {
 						cart.updateCartInfo();
 					}, 100);
 
-					$('html, body').animate({ scrollTop: 0 }, 'slow');
+					if (!cartModal.classList.contains('visible')) {
+						toggleBackdrop();
+						miniCartToggleHandler();
+					}
+
+					// $('html, body').animate({ scrollTop: 0 }, 'slow');
 				}
 			},
 			error: function (xhr, ajaxOptions, thrownError) {
@@ -228,7 +233,7 @@ var cart = {
 						cart.updateCartInfo();
 					}, 100);
 
-					$('html, body').animate({ scrollTop: 0 }, 'slow');
+					// $('html, body').animate({ scrollTop: 0 }, 'slow');
 				}
 			},
 			error: function (xhr, ajaxOptions, thrownError) {
@@ -356,10 +361,11 @@ var wishlist = {
 						);
 				}
 
-				$('#wishlist-total span').html(json['total']);
-				$('#wishlist-total').attr('title', json['total']);
+				document.getElementsByClassName('wishlist-counter')[0].innerHTML =
+					json['count'];
 
-				$('html, body').animate({ scrollTop: 0 }, 'slow');
+				// $('#wishlist-total span').html(json['total']);
+				// $('#wishlist-total').attr('title', json['total']);
 			},
 			error: function (xhr, ajaxOptions, thrownError) {
 				alert(

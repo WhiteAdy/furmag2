@@ -1,14 +1,68 @@
 {{ header }}
+{% if slider_fullwidth %}
+  <div class="container-fluid homepage-slideshow-fullscreen">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Swiper -->
+<div class="swiper-viewport">
+  <div class="swiper-container slideshow">
+      <div class="swiper-wrapper">
+      {% for slide in slider_fullwidth %}
+        <div class="swiper-slide">
+          {% if slide.link %}
+            <a href="{{ slide.link }}">
+              <img data-src="{{ slide.image }}" alt="{{ slide.title }}" class="swiper-lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </a>
+          {% else %}
+            <img data-src="{{ slide.image }}" alt="{{ slide.title }}" class="swiper-lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          {% endif %}
+        </div>
+      {% endfor %}
+      </div>
+      <div class="swiper-pagination swiper-pagination-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+</div>
+<script>
+  $(document).ready(() => {
+      var swiper = new Swiper('.slideshow', {
+        lazy: {
+          loadPrevNext: true,
+          loadPrevNextAmount: 1
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+  });
+</script>
+      </div>
+    </div>
+  </div>
+{% endif %}
 <div id="common-home" class="container">
-  <div class="row">{{ column_left }}
-    {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
-    {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
-    {% else %}
-    {% set class = 'col-sm-12' %}
-    {% endif %}
-    <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>
-    {{ column_right }}</div>
+  <div class="row">
+    {{ column_left }}
+      {% if column_left and column_right %}
+      {% set class = 'col-sm-6' %}
+      {% elseif column_left or column_right %}
+      {% set class = 'col-sm-9' %}
+      {% else %}
+      {% set class = 'col-sm-12' %}
+      {% endif %}
+    <div id="content" class="{{ class }}">
+      {{ content_top }}
+      {{ content_bottom }}
+    </div>
+      {{ column_right }}
+  </div>
 </div>
 {{ footer }}

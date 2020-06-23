@@ -10,6 +10,8 @@ $_['text_edit']         = 'Edit HTML Content Module';
 // Entry
 $_['entry_name']        = 'Module Name';
 $_['entry_title']       = 'Heading Title';
+$_['entry_class']       = 'HTML Class';
+$_['entry_id']          = 'HTML ID';
 $_['entry_description'] = 'Description';
 $_['entry_status']      = 'Status';
 

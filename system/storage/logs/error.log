@@ -1,0 +1,330 @@
+2020-06-21 22:43:27 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-21 22:43:27 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-21 22:43:27 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-21 22:43:27 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-21 22:43:27 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-21 22:43:27 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-21 22:43:27 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-21 22:43:27 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-21 22:43:27 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-21 22:43:27 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-21 22:43:27 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-21 22:43:27 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-21 22:43:27 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-21 22:43:27 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-21 22:43:27 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-21 22:43:27 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-21 22:43:27 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-21 22:43:27 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-21 22:43:27 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-21 22:43:27 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-21 22:43:27 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-21 22:43:27 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-21 22:43:27 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-21 22:43:27 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-21 22:43:27 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 16:30:58 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:30:58 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:30:58 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:30:58 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:30:58 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:30:58 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:30:58 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:30:58 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:30:58 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:30:58 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:30:58 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:30:58 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:30:58 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:30:58 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:30:58 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:30:58 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:30:58 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:30:58 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:30:58 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:30:58 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:30:58 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:30:58 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:30:58 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:30:58 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:30:58 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 16:31:40 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:40 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:40 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:31:40 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:31:40 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:31:40 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:31:40 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:40 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:40 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:31:40 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:31:40 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:31:40 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:31:40 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:40 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:40 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:31:40 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:31:40 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:31:40 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:31:40 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:40 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:40 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:31:40 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:31:40 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:31:40 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:31:40 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 16:31:49 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:49 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:31:49 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:31:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:31:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:31:49 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:49 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:31:49 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:31:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:31:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:31:49 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:49 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:31:49 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:31:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:31:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:31:49 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:49 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:31:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:31:49 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:31:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:31:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:31:49 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 16:32:02 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:02 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:02 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:32:02 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:32:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:32:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:32:02 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:02 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:02 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:32:02 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:32:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:32:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:32:02 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:02 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:02 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:32:02 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:32:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:32:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:32:02 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:02 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:02 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:32:02 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:32:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:32:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:32:02 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 16:32:34 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:34 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:34 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:32:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:32:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:32:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:32:34 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:34 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:34 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:32:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:32:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:32:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:32:34 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:34 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:34 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:32:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:32:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:32:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:32:34 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:34 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 16:32:34 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 16:32:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 16:32:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 16:32:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 16:32:34 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 19:56:54 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:56:54 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:56:54 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 19:56:54 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 19:56:54 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 19:56:54 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 19:56:54 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:56:54 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:56:54 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 19:56:54 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 19:56:54 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 19:56:54 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 19:56:54 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:56:54 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:56:55 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 19:56:55 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 19:56:55 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 19:56:55 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 19:56:55 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:56:55 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:56:55 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 19:56:55 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 19:56:55 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 19:56:55 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 19:56:55 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 19:57:43 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:57:43 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:57:43 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 19:57:43 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 19:57:43 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 19:57:43 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 19:57:43 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:57:43 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:57:43 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 19:57:43 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 19:57:43 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 19:57:43 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 19:57:43 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:57:43 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:57:43 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 19:57:43 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 19:57:43 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 19:57:43 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 19:57:43 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:57:43 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 23
+2020-06-22 19:57:43 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 19:57:43 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 19:57:43 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 19:57:43 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 19:57:43 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:01:06 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 24
+2020-06-22 20:01:06 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 24
+2020-06-22 20:01:06 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 20:01:06 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 20:01:06 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 20:01:06 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 20:01:06 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 24
+2020-06-22 20:01:06 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 24
+2020-06-22 20:01:06 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 20:01:06 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 20:01:06 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 20:01:06 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 20:01:06 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 24
+2020-06-22 20:01:06 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 24
+2020-06-22 20:01:06 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 20:01:06 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 20:01:06 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 20:01:06 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 20:01:06 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 24
+2020-06-22 20:01:06 - PHP Notice:  Undefined variable: setting in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 24
+2020-06-22 20:01:06 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\furmag2\system\library\image.php on line 169
+2020-06-22 20:01:06 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 177
+2020-06-22 20:01:06 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 180
+2020-06-22 20:01:06 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, bool given in D:\xampp\htdocs\furmag2\system\library\image.php on line 182
+2020-06-22 20:01:06 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:04:15 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:04:33 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:06:27 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:06:39 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:06:45 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:07:04 - PHP Notice:  Undefined variable: result in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 19
+2020-06-22 20:07:04 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:07:06 - PHP Notice:  Undefined variable: result in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 19
+2020-06-22 20:07:06 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:09:14 - PHP Notice:  Undefined variable: result in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 19
+2020-06-22 20:09:14 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:10:00 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:10:41 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:15:16 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:15:58 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:16:09 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:16:18 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:19:01 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:20:31 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:20:39 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:20:42 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:20:47 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:21:26 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:23:55 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:24:08 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:25:17 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:25:18 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:25:52 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:26:08 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:33:31 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:34:08 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:34:26 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:36:52 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:41:06 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:41:24 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:42:24 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:42:44 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:42:49 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:43:22 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:44:19 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:44:29 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:45:51 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:47:07 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:47:45 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:48:16 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:48:39 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 20:52:53 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 21:00:26 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-22 21:00:26 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-22 21:03:50 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-22 21:03:50 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 12:46:04 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 12:46:04 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 12:46:34 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 12:46:35 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 12:47:29 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 12:47:29 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 15:00:21 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\admin\controller\extension\module\slideshow.php on line 95
+2020-06-23 15:00:26 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 15:00:44 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 15:00:44 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 15:02:02 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 15:02:02 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 15:02:29 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 15:02:29 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 15:04:45 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 15:04:45 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 16:16:06 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 16:16:06 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 16:16:55 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 16:16:55 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:47:36 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:47:36 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:48:39 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:48:40 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:50:44 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:50:44 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:51:40 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:51:40 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:51:47 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:51:47 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:51:51 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:51:51 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:51:55 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:51:55 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:51:57 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:51:58 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:52:00 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:52:00 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:52:03 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:52:03 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:52:44 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:52:44 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:52:47 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:52:47 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:55:12 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:55:12 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:55:30 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:55:30 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:56:00 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:56:00 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:56:10 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:56:10 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15
+2020-06-23 22:58:01 - PHP Notice:  Undefined index: fullwidth_homepage in D:\xampp\htdocs\furmag2\catalog\controller\common\home.php on line 16
+2020-06-23 22:58:01 - PHP Notice:  Undefined index: carousel_id in D:\xampp\htdocs\furmag2\catalog\controller\extension\module\custom_product_carousel.php on line 15

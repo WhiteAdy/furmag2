@@ -9,4 +9,12 @@ class ModelSettingModule extends Model {
 			return array();	
 		}
 	}		
+	public function getModulesByCode($code) {
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "module WHERE code = '" . $code . "'");
+		if ($query->rows) {
+			return $query->rows;
+		} else {
+			return array();	
+		}
+	}		
 }

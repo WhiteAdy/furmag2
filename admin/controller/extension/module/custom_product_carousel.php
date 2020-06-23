@@ -1,9 +1,9 @@
 <?php
-class ControllerExtensionModuleSlideshow extends Controller {
+class ControllerExtensionModuleCustomProductCarousel extends Controller {
 	private $error = array();
 
 	public function index() {
-		$this->load->language('extension/module/slideshow');
+		$this->load->language('extension/module/custom_product_carousel');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -11,7 +11,7 @@ class ControllerExtensionModuleSlideshow extends Controller {
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			if (!isset($this->request->get['module_id'])) {
-				$this->model_setting_module->addModule('slideshow', $this->request->post);
+				$this->model_setting_module->addModule('custom_product_carousel', $this->request->post);
 			} else {
 				$this->model_setting_module->editModule($this->request->get['module_id'], $this->request->post);
 			}
@@ -44,6 +44,11 @@ class ControllerExtensionModuleSlideshow extends Controller {
 		} else {
 			$data['error_height'] = '';
 		}
+		if (isset($this->error['id'])) {
+			$data['error_id'] = $this->error['id'];
+		} else {
+			$data['error_id'] = '';
+		}
 
 		$data['breadcrumbs'] = array();
 
@@ -60,19 +65,19 @@ class ControllerExtensionModuleSlideshow extends Controller {
 		if (!isset($this->request->get['module_id'])) {
 			$data['breadcrumbs'][] = array(
 				'text' => $this->language->get('heading_title'),
-				'href' => $this->url->link('extension/module/slideshow', 'user_token=' . $this->session->data['user_token'], true)
+				'href' => $this->url->link('extension/module/custom_product_carousel', 'user_token=' . $this->session->data['user_token'], true)
 			);
 		} else {
 			$data['breadcrumbs'][] = array(
 				'text' => $this->language->get('heading_title'),
-				'href' => $this->url->link('extension/module/slideshow', 'user_token=' . $this->session->data['user_token'] . '&module_id=' . $this->request->get['module_id'], true)
+				'href' => $this->url->link('extension/module/custom_product_carousel', 'user_token=' . $this->session->data['user_token'] . '&module_id=' . $this->request->get['module_id'], true)
 			);
 		}
 
 		if (!isset($this->request->get['module_id'])) {
-			$data['action'] = $this->url->link('extension/module/slideshow', 'user_token=' . $this->session->data['user_token'], true);
+			$data['action'] = $this->url->link('extension/module/custom_product_carousel', 'user_token=' . $this->session->data['user_token'], true);
 		} else {
-			$data['action'] = $this->url->link('extension/module/slideshow', 'user_token=' . $this->session->data['user_token'] . '&module_id=' . $this->request->get['module_id'], true);
+			$data['action'] = $this->url->link('extension/module/custom_product_carousel', 'user_token=' . $this->session->data['user_token'] . '&module_id=' . $this->request->get['module_id'], true);
 		}
 
 		$data['cancel'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=module', true);
@@ -80,6 +85,8 @@ class ControllerExtensionModuleSlideshow extends Controller {
 		if (isset($this->request->get['module_id']) && ($this->request->server['REQUEST_METHOD'] != 'POST')) {
 			$module_info = $this->model_setting_module->getModule($this->request->get['module_id']);
 		}
+
+		$data['user_token'] = $this->session->data['user_token'];
 
 		if (isset($this->request->post['name'])) {
 			$data['name'] = $this->request->post['name'];
@@ -89,30 +96,54 @@ class ControllerExtensionModuleSlideshow extends Controller {
 			$data['name'] = '';
 		}
 
-		if (isset($this->request->post['fullwidth_homepage'])) {
-			$data['fullwidth_homepage'] = $this->request->post['fullwidth_homepage'];
-		} elseif (!empty($module_info)) {
-			$data['fullwidth_homepage'] = $module_info['fullwidth_homepage'];
-		}
+		$this->load->model('catalog/product');
 
-		if (isset($this->request->post['banner_id'])) {
-			$data['banner_id'] = $this->request->post['banner_id'];
-		} elseif (!empty($module_info)) {
-			$data['banner_id'] = $module_info['banner_id'];
+		$data['products'] = array();
+
+		if (!empty($this->request->post['product'])) {
+			$products = $this->request->post['product'];
+		} elseif (!empty($module_info['product'])) {
+			$products = $module_info['product'];
 		} else {
-			$data['banner_id'] = '';
+			$products = array();
 		}
 
-		$this->load->model('design/banner');
+		foreach ($products as $product_id) {
+			$product_info = $this->model_catalog_product->getProduct($product_id);
 
-		$data['banners'] = $this->model_design_banner->getBanners();
+			if ($product_info) {
+				$data['products'][] = array(
+					'product_id' => $product_info['product_id'],
+					'name'       => $product_info['name']
+				);
+			}
+		}
+
+		// if (isset($this->request->post['limit'])) {
+		// 	$data['limit'] = $this->request->post['limit'];
+		// } elseif (!empty($module_info)) {
+		// 	$data['limit'] = $module_info['limit'];
+		// } else {
+		// 	$data['limit'] = 5;
+		// }
+
+		if (isset($this->request->post['carousel_id'])) {
+			$data['carousel_id'] = $this->request->post['carousel_id'];
+		} elseif (!empty($module_info)) {
+			$data['carousel_id'] = $module_info['carousel_id'];
+		}
+		if (isset($this->request->post['title'])) {
+			$data['title'] = $this->request->post['title'];
+		} elseif (!empty($module_info)) {
+			$data['title'] = $module_info['title'];
+		}
 
 		if (isset($this->request->post['width'])) {
 			$data['width'] = $this->request->post['width'];
 		} elseif (!empty($module_info)) {
 			$data['width'] = $module_info['width'];
 		} else {
-			$data['width'] = '';
+			$data['width'] = 200;
 		}
 
 		if (isset($this->request->post['height'])) {
@@ -120,7 +151,7 @@ class ControllerExtensionModuleSlideshow extends Controller {
 		} elseif (!empty($module_info)) {
 			$data['height'] = $module_info['height'];
 		} else {
-			$data['height'] = '';
+			$data['height'] = 200;
 		}
 
 		if (isset($this->request->post['status'])) {
@@ -135,11 +166,11 @@ class ControllerExtensionModuleSlideshow extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('extension/module/slideshow', $data));
+		$this->response->setOutput($this->load->view('extension/module/custom_product_carousel', $data));
 	}
 
 	protected function validate() {
-		if (!$this->user->hasPermission('modify', 'extension/module/slideshow')) {
+		if (!$this->user->hasPermission('modify', 'extension/module/custom_product_carousel')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
@@ -154,7 +185,22 @@ class ControllerExtensionModuleSlideshow extends Controller {
 		if (!$this->request->post['height']) {
 			$this->error['height'] = $this->language->get('error_height');
 		}
+		if (!$this->request->post['carousel_id']) {
+			$this->error['id'] = $this->language->get('error_id');
+		}
 
 		return !$this->error;
+	}
+
+	public function install()
+	{
+		$this->load->model('setting/setting');
+		$this->model_setting_setting->editSetting('module_custom_product_carousel', ['module_custom_product_carousel_status' => 1]);
+	}
+
+	public function uninstall()
+	{
+		$this->load->model('setting/setting');
+		$this->model_setting_setting->deleteSetting('module_custom_product_carousel');
 	}
 }
