@@ -1,0 +1,5 @@
+---
+deployment:
+   tasks:
+      - export DEPLOYPATH=/home/httplesjardinsde/public_html/furmag2
+      - /bin/cp * $DEPLOYPATH
