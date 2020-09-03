@@ -38,6 +38,7 @@ const modalContinueShoppingBtn = document.getElementsByClassName(
 	'continue-shopping'
 )[0];
 let backdropToggleSource = null;
+const footerMenuHeaders = document.querySelectorAll('#footer-menu-mobile h5');
 
 const searchClickHandler = () => {
 	searchDiv.classList.toggle('search-bar-focused');
@@ -91,4 +92,16 @@ header.addEventListener('click', (e) => {
 			}
 		}
 	}
+});
+
+// Mobile footer
+
+[...footerMenuHeaders].forEach((item) => {
+	item.addEventListener('click', (e) => {
+		let list = e.target.nextElementSibling;
+
+		list.style.height === '0px'
+			? (list.style.height = list.scrollHeight + 'px')
+			: (list.style.height = '0px');
+	});
 });
