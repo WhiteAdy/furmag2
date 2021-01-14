@@ -61,7 +61,7 @@
           {% endif %}
         </a>
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <a href="{{ product.href }}">
+        <a href="{{ product.href }}" class="swiper-product-title">
           <h4>{{ product.name }}</h4>
         </a>
         <button type="button" class="product-wishlist-btn" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fal fa-heart"></i></button>

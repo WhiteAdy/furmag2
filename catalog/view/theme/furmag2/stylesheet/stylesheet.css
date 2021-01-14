@@ -1045,19 +1045,14 @@ footer {
 
 	#footer-menu-mobile {
 		margin: 0;
-
 		background: #fff;
-
 		display: block;
-
 		border: 1px solid #ddd;
-
 		border-radius: 4px;
 	}
 
 	#footer-menu-mobile ul {
 		overflow: hidden;
-
 		transition: all 0.3s cubic-bezier(0.67, 0.21, 0.11, 0.92);
 	}
 
@@ -1067,41 +1062,25 @@ footer {
 
 	#footer-menu-mobile h5 {
 		font-size: 14px;
-
 		color: var(--text-default-color);
-
 		position: relative;
-
 		margin-bottom: 0;
-
 		padding: 10px 0;
 	}
 
 	#footer-menu-mobile h5::after {
 		position: absolute;
-
 		content: '+';
-
 		right: 5px;
-
 		font-size: 16px;
-
 		top: 5px;
-
 		width: 22px;
-
 		height: 23px;
-
 		text-align: center;
-
 		border: 1px solid #bbb;
-
 		color: #bbb;
-
 		border-radius: 5px;
-
 		line-height: 1.4;
-
 		padding-left: 1px;
 	}
 
@@ -1132,6 +1111,10 @@ footer {
 	transform: translateX(-50%);
 	position: relative;
 	left: 50%;
+}
+.swiper-product-title {
+	position: relative;
+	z-index: 1;
 }
 .custom_product_carousel {
 	padding-bottom: 30px !important;
