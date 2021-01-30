@@ -120,4 +120,10 @@
       </li>
     {% endif %}
   </ul>
+  {% if products or vouchers %}
+  <div class="cart-modal-options">
+    <button class="continue-shopping">{{ text_continue_shopping }}</button>
+    <a href="index.php?route=checkout/checkout">{{ text_proceed_to_checkout }}</a>
+  </div>
+  {% endif %}
 </div>

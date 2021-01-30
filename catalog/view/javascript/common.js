@@ -203,7 +203,11 @@ var cart = {
 			},
 			error: function (xhr, ajaxOptions, thrownError) {
 				alert(
-					thrownError + '\r\n' + xhr.statusText + '\r\n' + xhr.responseText
+					thrownError +
+						'\r\n' +
+						xhr.statusText +
+						'\r\n' +
+						xhr.responseText
 				);
 			},
 		});
@@ -270,7 +274,11 @@ var cart = {
 			},
 			error: function (xhr, ajaxOptions, thrownError) {
 				alert(
-					thrownError + '\r\n' + xhr.statusText + '\r\n' + xhr.responseText
+					thrownError +
+						'\r\n' +
+						xhr.statusText +
+						'\r\n' +
+						xhr.responseText
 				);
 			},
 		});
@@ -292,6 +300,11 @@ var cart = {
 		miniCartButton.innerHTML = miniCartButtonContent.innerHTML;
 		miniCart.innerHTML = miniCartContent.innerHTML;
 		cartModal.innerHTML = cartModalContent.innerHTML;
+		document
+			.getElementsByClassName('continue-shopping')[0]
+			.addEventListener('click', () => {
+				backdropClickHandler();
+			});
 	},
 };
 
@@ -325,12 +338,18 @@ var voucher = {
 				) {
 					location = 'index.php?route=checkout/cart';
 				} else {
-					$('#cart > ul').load('index.php?route=common/cart/info ul li');
+					$('#cart > ul').load(
+						'index.php?route=common/cart/info ul li'
+					);
 				}
 			},
 			error: function (xhr, ajaxOptions, thrownError) {
 				alert(
-					thrownError + '\r\n' + xhr.statusText + '\r\n' + xhr.responseText
+					thrownError +
+						'\r\n' +
+						xhr.statusText +
+						'\r\n' +
+						xhr.responseText
 				);
 			},
 		});
@@ -361,15 +380,20 @@ var wishlist = {
 						);
 				}
 
-				document.getElementsByClassName('wishlist-counter')[0].innerHTML =
-					json['count'];
+				document.getElementsByClassName(
+					'wishlist-counter'
+				)[0].innerHTML = json['count'];
 
 				// $('#wishlist-total span').html(json['total']);
 				// $('#wishlist-total').attr('title', json['total']);
 			},
 			error: function (xhr, ajaxOptions, thrownError) {
 				alert(
-					thrownError + '\r\n' + xhr.statusText + '\r\n' + xhr.responseText
+					thrownError +
+						'\r\n' +
+						xhr.statusText +
+						'\r\n' +
+						xhr.responseText
 				);
 			},
 		});
@@ -403,7 +427,11 @@ var compare = {
 			},
 			error: function (xhr, ajaxOptions, thrownError) {
 				alert(
-					thrownError + '\r\n' + xhr.statusText + '\r\n' + xhr.responseText
+					thrownError +
+						'\r\n' +
+						xhr.statusText +
+						'\r\n' +
+						xhr.responseText
 				);
 			},
 		});
@@ -431,7 +459,9 @@ $(document).delegate('.agree', 'click', function (e) {
 			html +=
 				'        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
 			html +=
-				'        <h4 class="modal-title">' + $(element).text() + '</h4>';
+				'        <h4 class="modal-title">' +
+				$(element).text() +
+				'</h4>';
 			html += '      </div>';
 			html += '      <div class="modal-body">' + data + '</div>';
 			html += '    </div>';
@@ -559,7 +589,9 @@ $(document).delegate('.agree', 'click', function (e) {
 								category[json[i]['category']] = new Array();
 								category[json[i]['category']]['name'] =
 									json[i]['category'];
-								category[json[i]['category']]['item'] = new Array();
+								category[json[i]['category']][
+									'item'
+								] = new Array();
 							}
 
 							category[json[i]['category']]['item'].push(json[i]);

@@ -2,6 +2,7 @@
 	--main-bg-color: #e9ebee;
 	--section-bg-color: #fff;
 	--text-default-color: #666;
+	--header-bg-color: rgba(255, 255, 255, 0.6);
 	--theme-primary-color: #ff1d74;
 	--theme-secondary-color: #0082e6;
 	/* --theme-primary-color: #e12021;
@@ -50,7 +51,8 @@ a:hover {
 }
 
 header {
-	background: var(--section-bg-color);
+	background: var(--header-bg-color);
+	backdrop-filter: blur(10px) saturate(1.5);
 	position: sticky;
 	top: -91px;
 	transition: top 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -274,18 +276,20 @@ header.sticky {
 	color: #ccc;
 }
 
-.cart-modal-empty .continue-shopping {
+#cart-modal .continue-shopping {
 	background: var(--theme-primary-color);
 	border: none;
 	padding: 10px 12px !important;
 	color: #fff;
-	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	border-radius: 5px;
 }
-.cart-modal-empty .continue-shopping:hover {
+#cart-modal .continue-shopping:hover {
 	background: var(--theme-secondary-color);
+}
+.cart-modal-empty .continue-shopping {
+	margin-top: 20px;
 }
 .continue-shopping > i {
 	margin: 0;
@@ -348,7 +352,6 @@ header.sticky {
 }
 
 #cart-modal {
-	overflow: auto;
 	position: fixed;
 	background: white;
 	left: 50%;
@@ -375,9 +378,9 @@ header.sticky {
 	transition-delay: 0.05s;
 }
 
-#cart-modal > * {
-	width: calc(100% - 30px);
-}
+/* #cart-modal > * {
+	width: 100%
+} */
 
 .cart-modal-header {
 	display: flex;
@@ -412,6 +415,14 @@ header.sticky {
 	pointer-events: none;
 }
 
+.cart-modal-body {
+	overflow: auto;
+	margin-left: 20px;
+	padding-right: 20px;
+	width: calc(100% - 20px);
+	flex-grow: 1;
+}
+
 .cart-modal-body li {
 	padding: 10px 0;
 	border-bottom: 1px solid #ddd;
@@ -421,6 +432,10 @@ header.sticky {
 	max-height: 78px;
 	transition: all 0.35s cubic-bezier(1, -0.69, 1, 1.29);
 	overflow: hidden;
+}
+
+.cart-modal-body li:last-child {
+	border-bottom: 0;
 }
 
 .cart-modal-body li.removed {
@@ -452,6 +467,15 @@ header.sticky {
 	flex: 1;
 	text-align: center;
 	padding: 5px 3px;
+}
+
+.cart-modal-options {
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-top: 1px solid #ccc;
 }
 
 .product-name-options {
@@ -1064,7 +1088,7 @@ footer {
 		font-size: 14px;
 		color: var(--text-default-color);
 		position: relative;
-		margin-bottom: 0;
+		margin: 6px 0;
 		padding: 10px 0;
 	}
 
@@ -1093,6 +1117,12 @@ footer {
 	}
 }
 
+/* fix for overflow causing body to get horizontal scroll */
+@media (max-width: 850px) {
+	#account-menu {
+		min-width: 242px;
+	}
+}
 /* Swiper */
 .swiper-container {
 	width: 100%;

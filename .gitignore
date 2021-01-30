@@ -3,3 +3,5 @@ system/storage/logs
 image/cache
 system/storage/logs/error.log
 admin/view/stylesheet/bootstrap.css
+.vscode/launch.json
+system/library/template/Twig/Autoloader.php

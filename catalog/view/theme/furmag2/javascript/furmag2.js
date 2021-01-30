@@ -58,40 +58,41 @@ const backdropClickHandler = () => {
 };
 
 header.addEventListener('click', (e) => {
-	if (
-		e.target === backdrop ||
-		e.target.id === 'cart-modal-close' ||
-		e.target === modalContinueShoppingBtn
-	) {
+	const el = e.target;
+	if (el.id === 'cart-modal-close' || el === modalContinueShoppingBtn) {
 		backdropClickHandler();
 	} else {
-		if (e.target === searchInput) {
+		if (el === searchInput) {
 			toggleBackdrop();
 			searchClickHandler();
 		}
-		if (e.target === cartButton) {
+		if (el === cartButton) {
 			toggleBackdrop();
 			miniCartToggleHandler();
 		}
-		if (e.target.classList.contains('remove-item-btn')) {
-			e.target.parentElement.classList.add('removed');
+		if (el.classList.contains('remove-item-btn')) {
+			el.parentElement.classList.add('removed');
 			setTimeout(() => {
-				cart.remove(e.target.parentElement.dataset.cart_id);
+				cart.remove(el.parentElement.dataset.cart_id);
 			}, 250);
 		}
-		if (e.target.classList.contains('add')) {
-			cart.add(e.target.parentElement.parentElement.dataset.product_id);
+		if (el.classList.contains('add')) {
+			cart.add(el.parentElement.parentElement.dataset.product_id);
 		}
-		if (e.target.classList.contains('subtract')) {
-			if (e.target.nextElementSibling.value > 1) {
-				e.target.nextElementSibling.value--;
+		if (el.classList.contains('subtract')) {
+			if (el.nextElementSibling.value > 1) {
+				el.nextElementSibling.value--;
 				cart.update(
-					e.target.parentElement.parentElement.dataset.cart_id,
-					e.target.nextElementSibling.value
+					el.parentElement.parentElement.dataset.cart_id,
+					el.nextElementSibling.value
 				);
 			}
 		}
 	}
+});
+
+backdrop.addEventListener('click', () => {
+	backdropClickHandler();
 });
 
 // Mobile footer
